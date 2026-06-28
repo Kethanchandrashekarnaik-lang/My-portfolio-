@@ -22,7 +22,7 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 - **Certificates Viewer:** View and expand certifications directly within the portfolio.
 - **Contact Form:** A functional, styled contact form for direct communication.
 
-- Live Server: https://my-portfolio-pi-seven-56.vercel.app/
+- Live Server: https://kethanc.vercel.app/
 
 ## 📁 Project Structure
 
