@@ -18,11 +18,12 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 - **Responsive Design:** Optimized for mobile, tablet, and desktop viewing.
 - **Theme Toggle:** Switch between light and dark modes seamlessly.
 - **Interactive Hero Section:** Features a typing effect and a glassmorphism code card.
+- **Resume Access:** Direct link to view and download my professional resume.
 - **Projects Showcase:** Highlights academic projects like "Blood Donor Finder" and "Fake News Detection using AI" with links to live demos and GitHub repositories.
 - **Certificates Viewer:** View and expand certifications directly within the portfolio.
 - **Contact Form:** A functional, styled contact form for direct communication.
 
-- Live Server: https://kethanc.vercel.app/
+- **Live Server:** [https://kethanc.vercel.app/](https://kethanc.vercel.app/)
 
 ## 📁 Project Structure
 
