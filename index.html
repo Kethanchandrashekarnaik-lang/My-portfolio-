@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kethan C - Software Developer portfolio showcasing software solutions, secure applications, and academic projects like Blood Donor Finder and Fake News Detection.">
+    <title>Kethan C | Software Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Background Canvas/Particle Container -->
+    <div class="bg-gradient-glow"></div>
+    <div id="particle-canvas-container"></div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="main-header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="header-logo">
+                <span class="logo-accent">&lt;</span>Kethan<span class="logo-accent">.C /&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+                    <li><a href="#education" class="nav-link" id="nav-experience">Education</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+                    <li><a href="#certificates" class="nav-link" id="nav-certificates">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-outline btn-resume" id="cta-resume">Contact Me</a>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Open to internship & junior roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Kethan C</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build <span class="typing-text" id="typing-element"></span>
+                    </h2>
+                    <p class="hero-description">
+                        A passionate software developer specializing in building secure, responsive web systems,
+                        algorithm optimization, and data-driven artificial intelligence solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="cta-projects">
+                            View My Work <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="cta-contact">
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card-wrapper">
+                        <!-- Glassmorphism interactive card -->
+                        <div class="visual-card" id="interactive-card">
+                            <div class="card-header">
+                                <span class="window-dot red"></span>
+                                <span class="window-dot yellow"></span>
+                                <span class="window-dot green"></span>
+                                <span class="window-title">kethan_c.py</span>
+                            </div>
+                            <div class="card-body">
+                                <pre><code><span class="code-keyword">class</span> <span class="code-string">Developer</span>:
+    name = <span class="code-string">'Kethan C'</span>
+    role = <span class="code-string">'Software Developer'</span>
+    skills = [
+        <span class="code-string">'Python'</span>, <span class="code-string">'Java'</span>, <span class="code-string">'C++'</span>,
+        <span class="code-string">'MySQL'</span>, <span class="code-string">'HTML/CSS'</span>, <span class="code-string">'DBMS'</span>
+    ]
+    focus = <span class="code-string">'Cybersecurity & AI'</span>
+    work_hard = <span class="code-keyword">lambda</span>: <span class="code-boolean">True</span></code></pre>
+                            </div>
+                        </div>
+                        <!-- Floating Tech Tags -->
+                        <div class="floating-tag tag-react" id="tag-python"><i class="fa-brands fa-python"></i> Python
+                        </div>
+                        <div class="floating-tag tag-node" id="tag-java"><i class="fa-brands fa-java"></i> Java</div>
+                        <div class="floating-tag tag-js" id="tag-mysql"><i class="fa-solid fa-database"></i> MySQL</div>
+                        <div class="floating-tag tag-python" id="tag-html"><i class="fa-brands fa-html5"></i> HTML/CSS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">About Me</span>
+                    <h2 class="section-title">My Journey & Expertise</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Dedicated Software Developer & Tech Enthusiast</h3>
+                        <p>
+                            I am a software developer with a strong foundation in computer science and a deep interest
+                            in cybersecurity. Having completed my degree at Don Bosco Degree College, I have developed
+                            comprehensive knowledge of core computational concepts such as operating systems (OS),
+                            database management systems (DBMS), and computer networks (CN).
+                        </p>
+                        <p>
+                            I enjoy building secure, high-performance web systems and leveraging AI algorithms to
+                            analyze and solve real-world datasets. My ultimate goal is to apply my programming skills to
+                            create digital platforms that are both user-friendly and highly secure.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Academic Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-skills">
+                        <h3>My Technical Stack</h3>
+                        <div class="skills-container">
+                            <!-- Skill Group 1 -->
+                            <div class="skill-group">
+                                <h4>Programming Languages</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                                    <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+                                    <span class="skill-tag"><i class="fa-solid fa-code"></i> C & C++</span>
+                                    <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                                </div>
+                            </div>
+                            <!-- Skill Group 2 -->
+                            <div class="skill-group">
+                                <h4>Web & Databases</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
+                                    <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+                                    <span class="skill-tag"><i class="fa-solid fa-table"></i> DBMS / Relational
+                                        DB</span>
+                                </div>
+                            </div>
+                            <!-- Skill Group 3 -->
+                            <div class="skill-group">
+                                <h4>Core Computer Science</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag"><i class="fa-solid fa-microchip"></i> Operating Systems
+                                        (OS)</span>
+                                    <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Computer Networks
+                                        (CN)</span>
+                                    <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> Cyber Security
+                                        Fundamentals</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="experience-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Academic Journey</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Education Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Graduated</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Computer Science / Applications</h3>
+                            <span class="company">Don Bosco Degree College</span>
+                            <p>
+                                Completed undergraduate degree. Built extensive experience in programming principles,
+                                core database design, operating system internals, and networking configurations.
+                                Excelled in software architecture and algorithms.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Completed</div>
+                        <div class="timeline-content">
+                            <h3>Pre-University Course (PUC)</h3>
+                            <span class="company">Don Bosco PU College</span>
+                            <p>
+                                Completed pre-university studies with a major focus on Physics, Chemistry, Mathematics,
+                                and Computer Science. Laid the technical foundation for software engineering and
+                                analytical problem-solving.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Completed</div>
+                        <div class="timeline-content">
+                            <h3>Secondary School Education</h3>
+                            <span class="company">Don Bosco State School</span>
+                            <p>
+                                Completed high school education with strong academic honors. Actively participated in
+                                computing labs, science workshops, and logical reasoning programs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Works</span>
+                    <h2 class="section-title">Academic Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="projects-grid"
+                    style="grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 0 auto;">
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="assets/images/project_blood_donor.png" alt="Blood Donor Finder Dashboard Mockup"
+                                class="project-image" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="View Github Repository"
+                                        id="project1-github"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://mithun-mithu.github.io/Blood-Donor-Finder---2.0/"
+                                        class="project-link-btn" target="_blank" rel="noopener noreferrer"
+                                        aria-label="View Live Website" id="project1-live"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Web System & Database</span>
+                            <h3>Blood Donor Finder</h3>
+                            <p>
+                                A responsive web platform designed to streamline blood donation. Connects blood donors
+                                with recipients in real-time, matching medical requests instantly based on blood group
+                                requirements and location constraints.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>MySQL</span>
+                                <span>DBMS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="assets/images/project_fake_news.png" alt="Fake News Detection System Mockup"
+                                class="project-image" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="View Github Repository"
+                                        id="project2-github"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://aifake.vercel.app/" class="project-link-btn" target="_blank"
+                                        rel="noopener noreferrer" aria-label="View Live Website" id="project2-live"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Artificial Intelligence & NLP</span>
+                            <h3>Fake News Detection using AI</h3>
+                            <p>
+                                A machine learning application designed to identify and flag misleading news content.
+                                Uses advanced natural language processing (NLP) classifiers to verify article textual
+                                markers and calculate authenticity confidence.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>Machine Learning</span>
+                                <span>Scikit-Learn</span>
+                                <span>HTML5 / CSS3</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="certificates-grid">
+                    <!-- Certificate Card 1 -->
+                    <article class="certificate-card"
+                        data-src="assets/images/CYBER SECURECITY Course_Completion_Certificate.jpg" data-type="image">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="certificate-details">
+                            <h3 class="certificate-title">Basic Cyber Security & Hygiene Course</h3>
+                            <p class="certificate-description">
+                                National Cybercrime Training Centre (June 2025)
+                            </p>
+                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </article>
+
+                    <!-- Certificate Card 2 -->
+                    <article class="certificate-card" data-src="assets/images/Cyber security essential.jpg"
+                        data-type="image">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="certificate-details">
+                            <h3 class="certificate-title">Cyber Security Essentials</h3>
+                            <p class="certificate-description">
+                                ISEA, MeitY, Govt. of India (May 2024)
+                            </p>
+                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </article>
+
+                    <!-- Certificate Card 3 -->
+                    <article class="certificate-card" data-src="assets/images/Viksit Bharat(1).jpg" data-type="image">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="certificate-details">
+                            <h3 class="certificate-title">MY Bharat Budget Quest 2026</h3>
+                            <p class="certificate-description">
+                                Online Quiz Participation (February 2026)
+                            </p>
+                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </article>
+
+                    <!-- Certificate Card 4 -->
+                    <article class="certificate-card" data-src="assets/images/Viksit Bharat(2).jpg" data-type="image">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="certificate-details">
+                            <h3 class="certificate-title">Viksit Bharat Young Leaders Dialogue</h3>
+                            <p class="certificate-description">
+                                Online Quiz Participation (September 2025)
+                            </p>
+                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </article>
+
+                    <!-- Certificate Card 5 -->
+                    <article class="certificate-card" data-src="assets/images/Cloud Computing.jpg" data-type="image">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <div class="certificate-details">
+                            <h3 class="certificate-title">Cloud Computing Course</h3>
+                            <p class="certificate-description">
+                                FutureSkills Prime & AWS (May 2024)
+                            </p>
+                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Have a question or want to collaborate? Reach out!</h3>
+                        <p>
+                            I am open to discussing new opportunities, internship roles, software design ideas, or
+                            cybersecurity challenges.
+                        </p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-item">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-text-wrapper">
+                                    <span>Email Me</span>
+                                    <a
+                                        href="mailto:chandrashekarnaikkethan@gmail.com">chandrashekarnaikkethan@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact-text-wrapper">
+                                    <span>Call / WhatsApp</span>
+                                    <a href="tel:+917483106546">+91 7483106546</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact-text-wrapper">
+                                    <span>Location</span>
+                                    <p>Karnataka, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-wrapper">
+                            <span>Follow Me</span>
+                            <div class="social-links">
+                                <a href="#" class="social-btn" aria-label="GitHub Account" id="social-github"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="#" class="social-btn" aria-label="LinkedIn Profile" id="social-linkedin"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="social-btn" aria-label="Twitter Account" id="social-twitter"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <!-- Premium Form with floating labels -->
+                        <form id="contact-form" class="contact-form" autocomplete="off">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="contact-name" name="name" placeholder=" " required>
+                                    <label for="contact-name">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="contact-email" name="email" placeholder=" " required>
+                                    <label for="contact-email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="contact-subject" name="subject" placeholder=" " required>
+                                <label for="contact-subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact-message" name="message" rows="5" placeholder=" "
+                                    required></textarea>
+                                <label for="contact-message">Message</label>
+                            </div>
+                            <button type="submit" id="contact-submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div class="form-message-container" id="form-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Kethan C. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Certificate Preview Modal -->
+    <div id="certificate-modal" class="cert-modal">
+        <span class="cert-modal-close">&times;</span>
+        <div class="cert-modal-content">
+            <img id="cert-modal-img" src="" alt="Certificate Preview">
+            <iframe id="cert-modal-pdf" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
