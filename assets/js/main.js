@@ -221,44 +221,19 @@ function initInteractiveCard() {
 function initContactForm() {
     const form = document.getElementById('contact-form');
     const submitBtn = document.getElementById('contact-submit');
-    const msgContainer = document.getElementById('form-msg');
 
     if (!form) return;
 
     form.addEventListener('submit', (e) => {
-        e.preventDefault();
+        // We no longer prevent default. Allow the native HTML form submission to FormSubmit!
         
-        // Set loading state on button
+        // Set loading state on button for visual feedback while page navigates
         const btnText = submitBtn.querySelector('span');
         const btnIcon = submitBtn.querySelector('i');
-        
-        const originalText = btnText.textContent;
-        const originalIconClass = btnIcon.className;
 
         btnText.textContent = "Sending...";
         btnIcon.className = "fa-solid fa-circle-notch fa-spin";
         submitBtn.disabled = true;
-
-        // Mock API submission latency
-        setTimeout(() => {
-            // Reset state
-            btnText.textContent = originalText;
-            btnIcon.className = originalIconClass;
-            submitBtn.disabled = false;
-
-            // Show success notification
-            msgContainer.textContent = "Thank you! Your message has been sent successfully.";
-            msgContainer.className = "form-message-container success";
-            
-            // Reset form
-            form.reset();
-
-            // Clear message after 5 seconds
-            setTimeout(() => {
-                msgContainer.textContent = "";
-                msgContainer.className = "form-message-container";
-            }, 5000);
-        }, 1800);
     });
 }
 
