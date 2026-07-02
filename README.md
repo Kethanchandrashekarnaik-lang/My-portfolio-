@@ -57,5 +57,11 @@ I hold a Bachelor's in Computer Science/Applications from Don Bosco Degree Colle
 - **Phone:** +91 7483106546
 - **Location:** Karnataka, India
 
+## 🌐 Connect with Me
+
+- **GitHub:** [Kethanchandrashekarnaik-lang](https://github.com/Kethanchandrashekarnaik-lang)
+- **LinkedIn:** [kethanc1504](https://www.linkedin.com/in/kethanc1504/?skipRedirect=true)
+- **Instagram:** [@kethan_c_](https://www.instagram.com/kethan_c_/)
+
 ---
 *Designed and built by Kethan C &copy; 2026*
