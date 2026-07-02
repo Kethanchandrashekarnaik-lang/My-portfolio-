@@ -20,14 +20,18 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 - **Interactive Hero Section:** Features a typing effect and a glassmorphism code card.
 - **Resume Access:** Direct link to view and download my professional resume.
 - **Projects Showcase:** Highlights academic projects like "Blood Donor Finder" and "Fake News Detection using AI" with links to live demos and GitHub repositories.
-- **Certificates Viewer:** View and expand certifications directly within the portfolio.
+- **Certificates Viewer:** View and expand certifications directly within the portfolio, including:
+  - Basic Cyber Security & Hygiene Course
+  - Cyber Security Essentials
+  - Cloud Computing Course
+  - And more...
 - **Contact Form:** A functional, styled contact form for direct communication.
 
 - **Live Server:** [https://kethanc.vercel.app/](https://kethanc.vercel.app/)
 
 ## 📁 Project Structure
 
-```
+```text
 ├── assets/
 │   ├── css/
 │   │   └── style.css       # Main stylesheet
@@ -35,7 +39,9 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 │   │   └── main.js         # Interactive logic and animations
 │   └── images/             # Project screenshots and certificate images
 ├── index.html              # Main HTML document
-└── README.md               # Project documentation
+├── README.md               # Project documentation
+├── Resume.pdf              # Professional Resume
+└── Fake news  detection.pdf # Project Details for Fake News Detection
 ```
 
 ## 👨‍💻 About Me
