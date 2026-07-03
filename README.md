@@ -41,7 +41,8 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 ├── index.html              # Main HTML document
 ├── README.md               # Project documentation
 ├── Resume.pdf              # Professional Resume
-└── Fake news  detection.pdf # Project Details for Fake News Detection
+├── Fake news  detection.pdf # Project Details for Fake News Detection
+└── Blood Donor Finder.pdf  # Project Details for Blood Donor Finder
 ```
 
 ## 👨‍💻 About Me
