@@ -47,10 +47,11 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 
 ## 👨‍💻 About Me
 
-I hold a Bachelor's in Computer Science/Applications from Don Bosco Degree College. My expertise includes:
+I hold a B.Sc. in Computer Science from Don Bosco Degree College. My expertise includes:
 - **Programming Languages:** Python, Java, C, C++, JavaScript
-- **Web & Databases:** HTML5, CSS3, MySQL, DBMS
+- **Web & Databases:** HTML5, CSS3, MySQL, SQLite3, DBMS
 - **Core CS:** Operating Systems, Computer Networks, Cyber Security Fundamentals
+- **Tools & Environments:** VS Code, Git, GitHub, Antigravity
 
 ## 📧 Contact
 
