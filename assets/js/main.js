@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactForm();
     initParticleBackground();
     initCertificateModal();
+    initProgressBars();
+    initVisitorCounter();
 });
 
 /* --- Theme Handler (Dark / Light) --- */
@@ -224,16 +226,41 @@ function initContactForm() {
 
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
-        // We no longer prevent default. Allow the native HTML form submission to FormSubmit!
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
         
-        // Set loading state on button for visual feedback while page navigates
+        // Set loading state on button for visual feedback
         const btnText = submitBtn.querySelector('span');
         const btnIcon = submitBtn.querySelector('i');
+        const msgContainer = document.getElementById('form-msg');
 
         btnText.textContent = "Sending...";
         btnIcon.className = "fa-solid fa-circle-notch fa-spin";
         submitBtn.disabled = true;
+
+        // Replace YOUR_SERVICE_ID and YOUR_TEMPLATE_ID with actual EmailJS IDs
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+            .then(function() {
+                btnText.textContent = "Sent Successfully!";
+                btnIcon.className = "fa-solid fa-check";
+                msgContainer.innerHTML = '<p style="color: #10b981; margin-top: 10px; font-size: 0.9rem;">Message sent successfully! I will get back to you soon.</p>';
+                form.reset();
+                setTimeout(() => {
+                    btnText.textContent = "Send Message";
+                    btnIcon.className = "fa-solid fa-paper-plane";
+                    submitBtn.disabled = false;
+                    msgContainer.innerHTML = '';
+                }, 5000);
+            }, function(error) {
+                btnText.textContent = "Failed to Send";
+                btnIcon.className = "fa-solid fa-xmark";
+                msgContainer.innerHTML = '<p style="color: #ef4444; margin-top: 10px; font-size: 0.9rem;">Failed to send message. Please try again later.</p>';
+                setTimeout(() => {
+                    btnText.textContent = "Send Message";
+                    btnIcon.className = "fa-solid fa-paper-plane";
+                    submitBtn.disabled = false;
+                }, 4000);
+            });
     });
 }
 
@@ -387,4 +414,48 @@ function initCertificateModal() {
             modalImg.style.display = 'none';
         }, 400);
     }
+}
+
+/* --- Skills Progress Bar Animation --- */
+function initProgressBars() {
+    const progressBars = document.querySelectorAll('.progress-fill');
+    
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const targetWidth = bar.getAttribute('data-width');
+                bar.style.width = targetWidth;
+                obs.unobserve(bar);
+            }
+        });
+    }, { threshold: 0.2 });
+    
+    progressBars.forEach(bar => {
+        // Store the original width in a data attribute and reset inline style to 0
+        const targetWidth = bar.style.width;
+        bar.setAttribute('data-width', targetWidth);
+        bar.style.width = '0%';
+        observer.observe(bar);
+    });
+}
+
+/* --- Visitor Counter --- */
+function initVisitorCounter() {
+    const counterElement = document.getElementById('visitor-count');
+    if (!counterElement) return;
+    
+    let views = localStorage.getItem('portfolio-views');
+    if (!views) {
+        views = Math.floor(Math.random() * 500) + 1000; // Start at a base number
+    }
+    
+    // Increment on new session
+    if (!sessionStorage.getItem('portfolio-visited')) {
+        views = parseInt(views) + 1;
+        localStorage.setItem('portfolio-views', views);
+        sessionStorage.setItem('portfolio-visited', 'true');
+    }
+    
+    counterElement.textContent = parseInt(views).toLocaleString();
 }

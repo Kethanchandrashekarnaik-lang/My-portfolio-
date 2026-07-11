@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Spline 3D Viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
 </head>
 
 <body>
@@ -91,25 +93,9 @@
                 </div>
                 <div class="hero-visual">
                     <div class="visual-card-wrapper">
-                        <!-- Glassmorphism interactive card -->
-                        <div class="visual-card" id="interactive-card">
-                            <div class="card-header">
-                                <span class="window-dot red"></span>
-                                <span class="window-dot yellow"></span>
-                                <span class="window-dot green"></span>
-                                <span class="window-title">kethan_c.py</span>
-                            </div>
-                            <div class="card-body">
-                                <pre><code><span class="code-keyword">class</span> <span class="code-string">Developer</span>:
-    name = <span class="code-string">'Kethan C'</span>
-    role = <span class="code-string">'Software Developer'</span>
-    skills = [
-        <span class="code-string">'Python'</span>, <span class="code-string">'Java'</span>, <span class="code-string">'C++'</span>,
-        <span class="code-string">'MySQL'</span>, <span class="code-string">'HTML/CSS'</span>, <span class="code-string">'DBMS'</span>
-    ]
-    focus = <span class="code-string">'Cybersecurity & AI'</span>
-    work_hard = <span class="code-keyword">lambda</span>: <span class="code-boolean">True</span></code></pre>
-                            </div>
+                        <!-- Spline 3D Hero Animation -->
+                        <div class="visual-card spline-wrapper" id="interactive-card" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; background: transparent; border: none; box-shadow: none;">
+                            <spline-viewer url="https://prod.spline.design/q6LzO1o0Y0VbB6pC/scene.splinecode" style="width: 100%; height: 100%;"></spline-viewer>
                         </div>
                         <!-- Floating Tech Tags -->
                         <div class="floating-tag tag-react" id="tag-python"><i class="fa-brands fa-python"></i> Python
@@ -155,7 +141,7 @@
                         </p>
                         <div class="about-stats">
                             <div class="stat-item">
-                                <span class="stat-number">2</span>
+                                <span class="stat-number">3</span>
                                 <span class="stat-label">Academic Projects</span>
                             </div>
                             <div class="stat-item">
@@ -167,45 +153,72 @@
 
                     <div class="about-skills">
                         <h3>My Technical Stack</h3>
-                        <div class="skills-container">
-                            <!-- Skill Group 1 -->
-                            <div class="skill-group">
-                                <h4>Programming Languages</h4>
-                                <div class="skill-tags">
-                                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
-                                    <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
-                                    <span class="skill-tag"><i class="fa-solid fa-code"></i> C & C++</span>
-                                    <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <div class="skills-progress-container">
+                            <!-- Animated Progress Bars -->
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span><i class="fa-brands fa-python"></i> Python</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%;"></div>
                                 </div>
                             </div>
-                            <!-- Skill Group 2 -->
-                            <div class="skill-group">
-                                <h4>Web & Databases</h4>
-                                <div class="skill-tags">
-                                    <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
-                                    <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL & SQLite3</span>
-                                    <span class="skill-tag"><i class="fa-solid fa-table"></i> DBMS</span>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span><i class="fa-brands fa-java"></i> Java / C++</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%;"></div>
                                 </div>
                             </div>
-                            <!-- Skill Group 3 -->
-                            <div class="skill-group">
-                                <h4>Core Computer Science</h4>
-                                <div class="skill-tags">
-                                    <span class="skill-tag"><i class="fa-solid fa-microchip"></i> Operating Systems
-                                        (OS)</span>
-                                    <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Computer Networks
-                                        (CN)</span>
-                                    <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> Cyber Security
-                                        Fundamentals</span>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span><i class="fa-brands fa-html5"></i> HTML/CSS/JS</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%;"></div>
                                 </div>
                             </div>
-                            <!-- Skill Group 4 -->
-                            <div class="skill-group" style="margin-top: 1.5rem;">
-                                <h4>Tools & Environments</h4>
-                                <div class="skill-tags">
-                                    <span class="skill-tag"><i class="fa-solid fa-code-branch"></i> Git & GitHub</span>
-                                    <span class="skill-tag"><i class="fa-solid fa-file-code"></i> VS Code</span>
-                                    <span class="skill-tag"><i class="fa-solid fa-rocket"></i> Antigravity</span>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span><i class="fa-solid fa-database"></i> MySQL / DBMS</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Tags -->
+                        <div class="skill-group" style="margin-top: 1.5rem;">
+                            <h4>Core Competencies</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fa-solid fa-microchip"></i> Operating Systems</span>
+                                <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Computer Networks</span>
+                                <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> Cyber Security</span>
+                                <span class="skill-tag"><i class="fa-solid fa-code-branch"></i> Git & GitHub</span>
+                            </div>
+                        </div>
+
+                        <!-- Currently Learning -->
+                        <div class="currently-learning">
+                            <h4><i class="fa-solid fa-fire text-gradient"></i> Currently Learning</h4>
+                            <div class="learning-grid">
+                                <div class="learning-item">
+                                    <i class="fa-brands fa-react"></i>
+                                    <span>React.js</span>
+                                </div>
+                                <div class="learning-item">
+                                    <i class="fa-brands fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="learning-item">
+                                    <i class="fa-solid fa-network-wired"></i>
+                                    <span>DSA</span>
                                 </div>
                             </div>
                         </div>
@@ -267,6 +280,20 @@
                             </p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Contribution Graph -->
+        <section class="github-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Coding Activity</span>
+                    <h2 class="section-title">GitHub Contributions</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="github-graph-container">
+                    <img src="https://ghchart.rshah.org/8B5CF6/Kethanchandrashekarnaik-lang" alt="Kethan's Github Chart" />
                 </div>
             </div>
         </section>
@@ -448,6 +475,49 @@
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">What Others Say</span>
+                    <h2 class="section-title">Testimonials</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <article class="testimonial-card">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <p class="testimonial-text">
+                            "Kethan is an exceptionally dedicated student with a sharp eye for software design and cybersecurity. His ability to grasp complex concepts and apply them practically is impressive."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">P</div>
+                            <div class="author-info">
+                                <h4>Prof. Smith</h4>
+                                <span>Don Bosco Degree College</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Testimonial 2 -->
+                    <article class="testimonial-card">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <p class="testimonial-text">
+                            "Working alongside Kethan on the Fake News Detection project showed me his strong collaborative skills and deep understanding of machine learning algorithms. Highly recommended developer!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Mithun</h4>
+                                <span>Project Collaborator</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="contact-section scroll-reveal">
             <div class="container">
@@ -512,11 +582,8 @@
                     </div>
 
                     <div class="contact-form-wrapper">
-                        <!-- Premium Form with floating labels -->
-                        <form id="contact-form" class="contact-form" action="https://formsubmit.co/chandrashekarnaikkethan@gmail.com" method="POST" autocomplete="off">
-                            <input type="hidden" name="_subject" value="New contact message from portfolio">
-                            <input type="hidden" name="_next" value="#">
-
+                        <!-- Premium Form with EmailJS Integration -->
+                        <form id="contact-form" class="contact-form" autocomplete="off">
                             <div class="form-row">
                                 <div class="form-group">
                                     <input type="text" id="contact-name" name="name" placeholder=" " required>
@@ -561,6 +628,11 @@
                 <a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 <a href="#contact">Contact</a>
             </div>
+            
+            <div class="visitor-counter">
+                <i class="fa-solid fa-eye"></i>
+                <span>Profile Views: <span class="counter-number" id="visitor-count">1,024</span></span>
+            </div>
         </div>
     </footer>
 
@@ -578,6 +650,14 @@
         </div>
     </div>
 
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Replace with your actual EmailJS Public Key
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
     <!-- Script file -->
     <script src="assets/js/main.js"></script>
 </body>

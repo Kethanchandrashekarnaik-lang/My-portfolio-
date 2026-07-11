@@ -19,7 +19,7 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 - **Theme Toggle:** Switch between light and dark modes seamlessly.
 - **Interactive Hero Section:** Features a typing effect and a glassmorphism code card.
 - **Resume Access:** Direct link to view and download my professional resume.
-- **Projects Showcase:** Highlights academic projects like "Blood Donor Finder" and "Fake News Detection using AI" with links to live demos and GitHub repositories.
+- **Projects Showcase:** Highlights academic projects like "Blood Donor Finder", "Fake News Detection using AI", and "QRGen AI" with links to live demos and GitHub repositories.
 - **Certificates Viewer:** View and expand certifications directly within the portfolio, including:
   - Basic Cyber Security & Hygiene Course
   - Cyber Security Essentials
