@@ -33,18 +33,23 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 
 ## 📁 Project Structure
 
+The project follows a clean, organized, and modular structure to maintain separation of concerns:
+
 ```text
-├── assets/
-│   ├── css/
-│   │   └── style.css       # Main stylesheet
-│   ├── js/
-│   │   └── main.js         # Interactive logic and animations
-│   └── images/             # Project screenshots and certificate images
-├── index.html              # Main HTML document
-├── README.md               # Project documentation
-├── Resume.pdf              # Professional Resume
-├── Fake news  detection.pdf # Project Details for Fake News Detection
-└── Blood Donor Finder.pdf  # Project Details for Blood Donor Finder
+├── assets/                  # All static resources and assets
+│   ├── css/                 # Stylesheets directory
+│   │   └── style.css        # Contains all CSS including CSS variables, layout grids, responsive media queries, and animations
+│   ├── js/                  # JavaScript directory
+│   │   └── main.js          # Handles interactivity: theme toggling, scroll effects, typing animations, and mobile menu logic
+│   └── images/              # Image assets directory
+│       ├── logo.jpg         # Custom "KC" navigation branding logo
+│       ├── profile_hero.png # Personal portrait used in the hero section
+│       └── [Various]        # Project screenshots, certificate JPGs, and other UI assets
+├── index.html               # The main entry point. Contains the HTML5 semantic structure of the entire single-page portfolio
+├── README.md                # Project documentation detailing features, setup, and structure
+├── Resume.pdf               # Downloadable professional resume for recruiters
+├── Fake news  detection.pdf # Detailed project report/documentation for the Machine Learning Fake News Detection project
+└── Blood Donor Finder.pdf   # Detailed project report/documentation for the Blood Donor Finder application
 ```
 
 ## 👨‍💻 About Me
