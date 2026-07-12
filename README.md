@@ -17,7 +17,8 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 
 - **Responsive Design:** Optimized for mobile, tablet, and desktop viewing.
 - **Theme Toggle:** Switch between light and dark modes seamlessly.
-- **Interactive Hero Section:** Features a typing effect and a glassmorphism code card.
+- **Interactive Hero Section:** Features an interactive 3D Spline animation and dynamic typography.
+- **Personal Profile Section:** Dedicated section containing personal details, contact info, and a quick education overview.
 - **Resume Access:** Direct link to view and download my professional resume.
 - **Projects Showcase:** Highlights academic projects like "Blood Donor Finder", "Fake News Detection using AI", and "QRGen AI" with links to live demos and GitHub repositories.
 - **Certificates Viewer:** View and expand certifications directly within the portfolio, including:
@@ -47,7 +48,12 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 
 ## 👨‍💻 About Me
 
-I hold a B.Sc. in Computer Science from Don Bosco Degree College. My expertise includes:
+I am a dedicated Software Developer with a strong foundation in computer science and a deep interest in cybersecurity.
+
+- **Education:** 
+  - Degree: Don Bosco Degree College
+  - College: Don Bosco PU College
+  - School: Don Bosco State School
 - **Programming Languages:** Python, Java, C, C++, JavaScript
 - **Web & Databases:** HTML5, CSS3, MySQL, SQLite3, DBMS
 - **Core CS:** Operating Systems, Computer Networks, Cyber Security Fundamentals
