@@ -15,7 +15,7 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 
 ## 🌟 Key Features
 
-- **Responsive Design:** Optimized for mobile, tablet, and desktop viewing.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop viewing, complete with a slide-out hamburger menu.
 - **Theme Toggle:** Switch between light and dark modes seamlessly.
 - **Interactive Hero Section:** Features dynamic typography and a glassmorphism portrait card.
 - **Personal Profile Section:** Dedicated section containing personal details, contact info, and a quick education overview.
