@@ -17,6 +17,7 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 
 - **Responsive Design:** Fully optimized for mobile, tablet, and desktop viewing, complete with a slide-out hamburger menu.
 - **Theme Toggle:** Switch between light and dark modes seamlessly.
+- **Custom Branding:** Features a personalized "KC" logo integrated seamlessly into the navigation header.
 - **Interactive Hero Section:** Features dynamic typography and a glassmorphism portrait card.
 - **Personal Profile Section:** Dedicated section containing personal details, contact info, and a quick education overview.
 - **Resume Access:** Direct link to view and download my professional resume.
