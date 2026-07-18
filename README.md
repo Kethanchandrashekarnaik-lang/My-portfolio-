@@ -21,7 +21,11 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 - **Interactive Hero Section:** Features dynamic typography and a glassmorphism portrait card.
 - **Personal Profile Section:** Dedicated section containing personal details, contact info, and a quick education overview.
 - **Resume Access:** Direct link to view and download my professional resume.
-- **Projects Showcase:** Highlights academic projects like "Blood Donor Finder", "Fake News Detection using AI", "QRGen AI", and "SecurePass AI" with links to live demos and GitHub repositories.
+- **Projects Showcase:** Highlights academic projects with links to live demos and GitHub repositories:
+  - [Blood Donor Finder](https://mithun-mithu.github.io/Blood-Donor-Finder---2.0/)
+  - [Fake News Detection using AI](https://aifake.vercel.app/)
+  - [QRGen AI](https://qr-gen-ai-nine.vercel.app/)
+  - [SecurePass AI](https://secure-pass-ai-advanced-password-ge.vercel.app/)
 - **Certificates Viewer:** View and expand certifications directly within the portfolio, including:
   - Basic Cyber Security & Hygiene Course
   - Cyber Security Essentials
