@@ -26,6 +26,7 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
   - [Fake News Detection using AI](https://aifake.vercel.app/)
   - [QRGen AI](https://qr-gen-ai-nine.vercel.app/)
   - [SecurePass AI](https://secure-pass-ai-advanced-password-ge.vercel.app/)
+  - [Cute Lamp Login](https://cute-lamp-login-delta.vercel.app/)
 - **Certificates Viewer:** View and expand certifications directly within the portfolio, including:
   - Basic Cyber Security & Hygiene Course
   - Cyber Security Essentials
