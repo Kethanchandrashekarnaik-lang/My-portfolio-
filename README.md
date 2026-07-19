@@ -28,10 +28,11 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
   - [SecurePass AI](https://secure-pass-ai-advanced-password-ge.vercel.app/)
   - [Cute Lamp Login](https://cute-lamp-login-delta.vercel.app/)
 - **Certificates Viewer:** View and expand certifications directly within the portfolio, including:
-  - Basic Cyber Security & Hygiene Course
-  - Cyber Security Essentials
-  - Cloud Computing Course
-  - And more...
+  - National Cyber Crime Training Center (2025)
+  - Cloud Computing Course (2025)
+  - Cyber Security Essentials (2025)
+  - MY Bharat Budget Quest (2026)
+  - Viksit Bharat Young Leaders Dialogue (2026)
 - **Contact Form:** A functional, styled contact form for direct communication.
 
 - **Live Server:** [https://kethanc.vercel.app/](https://kethanc.vercel.app/)
