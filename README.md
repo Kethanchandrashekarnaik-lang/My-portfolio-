@@ -8,10 +8,12 @@ This portfolio is designed to be a modern, responsive, and visually appealing re
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Styling:** Custom CSS with CSS Variables, Flexbox, and CSS Grid
-- **Icons:** FontAwesome
-- **Fonts:** Google Fonts (Inter, Outfit)
+- **Frontend & Web:** HTML5, CSS3, JavaScript (ES6+), Glassmorphism UI
+- **AI & Machine Learning:** Python, Scikit-Learn, Natural Language Processing (NLP)
+- **Databases:** MySQL, SQLite3, Relational DBMS Design
+- **Cybersecurity:** Passwords & Cryptographic Principles, Cyber Security Hygiene
+- **Core Languages:** Python, Java, C, C++, JavaScript
+- **Icons & Fonts:** FontAwesome 6, Google Fonts (Inter, Outfit)
 
 ## 🌟 Key Features
 
