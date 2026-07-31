@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initCertificateModal();
     initProgressBars();
     initVisitorCounter();
+    initMobileProfileTheme();
+    initMacOSContactTheme();
 });
 
 /* --- Theme Handler (Dark / Light) --- */
@@ -459,3 +461,163 @@ function initVisitorCounter() {
     
     counterElement.textContent = parseInt(views).toLocaleString();
 }
+
+/* --- Mobile Interface Profile Tab Switcher, Clock & 3D Tilt --- */
+function initMobileProfileTheme() {
+    // 1. Interactive Bottom Dock Tab Switching
+    const dockItems = document.querySelectorAll('.dock-item');
+    const tabPanes = document.querySelectorAll('.mobile-tab-pane');
+
+    if (dockItems.length && tabPanes.length) {
+        dockItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const targetTab = item.getAttribute('data-tab');
+                
+                // Update active dock button
+                dockItems.forEach(btn => btn.classList.remove('active'));
+                item.classList.add('active');
+
+                // Update active tab pane
+                tabPanes.forEach(pane => {
+                    if (pane.id === targetTab) {
+                        pane.classList.add('active');
+                    } else {
+                        pane.classList.remove('active');
+                    }
+                });
+            });
+        });
+    }
+
+    // 2. Real-time Status Bar Digital Clock
+    const mobileClock = document.getElementById('mobile-clock');
+    if (mobileClock) {
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            mobileClock.textContent = `${hours}:${minutes}`;
+        }
+        updateClock();
+        setInterval(updateClock, 10000);
+    }
+
+    // 3. Dynamic 3D Interactive Tilt on Hover
+    const phone = document.getElementById('mobile-profile-phone');
+    if (phone) {
+        const wrapper = phone.parentElement;
+        if (wrapper) {
+            wrapper.addEventListener('mousemove', (e) => {
+                if (window.innerWidth < 768) return; // Disable on small touch screens
+                const rect = wrapper.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                const rotateX = (-y / rect.height) * 12;
+                const rotateY = (x / rect.width) * 12;
+                phone.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            wrapper.addEventListener('mouseleave', () => {
+                phone.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            });
+        }
+    }
+}
+
+/* --- macOS Laptop Interface Contact Section (Sidebar, Dock, Clock & 3D Tilt) --- */
+function initMacOSContactTheme() {
+    // 1. Sidebar Nav & Dock Navigation Switcher
+    const navItems = document.querySelectorAll('.macos-nav-item');
+    const dockItems = document.querySelectorAll('.dock-icon-item');
+    const panes = document.querySelectorAll('.macos-view-pane');
+
+    function switchPane(targetPaneId) {
+        // Update Sidebar
+        navItems.forEach(item => {
+            if (item.getAttribute('data-macos-pane') === targetPaneId) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        // Update Dock Active Indicator
+        dockItems.forEach(item => {
+            if (item.getAttribute('data-dock-target') === targetPaneId) {
+                item.classList.add('active-app');
+            } else {
+                item.classList.remove('active-app');
+            }
+        });
+
+        // Update Panes
+        panes.forEach(pane => {
+            if (pane.id === targetPaneId) {
+                pane.classList.add('active');
+            } else {
+                pane.classList.remove('active');
+            }
+        });
+    }
+
+    if (navItems.length) {
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const target = item.getAttribute('data-macos-pane');
+                switchPane(target);
+            });
+        });
+    }
+
+    if (dockItems.length) {
+        dockItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const target = item.getAttribute('data-dock-target');
+                switchPane(target);
+            });
+        });
+    }
+
+    // 2. Real-time Status Bar Clock for macOS Top Bar
+    const macosClock = document.getElementById('macos-clock');
+    if (macosClock) {
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            macosClock.textContent = `${hours}:${minutes} ${ampm}`;
+        }
+        updateClock();
+        setInterval(updateClock, 10000);
+    }
+
+    // 3. Dynamic 3D Laptop Lid Tilt on Hover
+    const macbook = document.getElementById('macbook-contact-screen');
+    if (macbook) {
+        const wrapper = macbook.parentElement;
+        if (wrapper) {
+            wrapper.addEventListener('mousemove', (e) => {
+                if (window.innerWidth < 768) return;
+                const rect = wrapper.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                const rotateX = (-y / rect.height) * 8;
+                const rotateY = (x / rect.width) * 8;
+                macbook.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            wrapper.addEventListener('mouseleave', () => {
+                macbook.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            });
+        }
+    }
+}
+
+

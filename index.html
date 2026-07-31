@@ -234,49 +234,216 @@
         </section>
 
         <!-- Profile Section -->
-        <section id="profile" class="profile-section scroll-reveal" style="padding: 5rem 0;">
+        <section id="profile" class="profile-section scroll-reveal" style="padding: 6rem 0; scroll-margin-top: 90px;">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Who I Am</span>
+                    <span class="section-subtitle">Interactive Mobile OS</span>
                     <h2 class="section-title">Personal Profile</h2>
                     <div class="section-underline"></div>
                 </div>
 
-                <div class="profile-card" style="background: var(--bg-card); backdrop-filter: var(--glass-blur); border: 1px solid var(--border-color); border-radius: 20px; padding: 2.5rem; max-width: 900px; margin: 0 auto; box-shadow: var(--card-shadow); transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--glow-shadow)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--card-shadow)'">
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
-                        <div>
-                            <h3 style="color: var(--accent-primary); margin-bottom: 1.5rem; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-user"></i> Personal Details</h3>
-                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.2rem; font-size: 1.05rem;">
-                                <li><strong style="color: var(--text-primary); display: inline-block; width: 100px;">Name:</strong> <span style="color: var(--text-secondary);">Kethan C</span></li>
-                                <li><strong style="color: var(--text-primary); display: inline-block; width: 100px;">Age:</strong> <span style="color: var(--text-secondary);">21 yrs</span></li>
-                                <li><strong style="color: var(--text-primary); display: inline-block; width: 100px;">Gender:</strong> <span style="color: var(--text-secondary);">Male</span></li>
-                                <li><strong style="color: var(--text-primary); display: inline-block; width: 100px;">Place:</strong> <span style="color: var(--text-secondary);">Chitradurga, 577501</span></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--accent-primary); margin-bottom: 1.5rem; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-address-book"></i> Contact Info</h3>
-                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.2rem; font-size: 1.05rem;">
-                                <li><strong style="color: var(--text-primary); display: inline-block; width: 100px;">Contact:</strong> <a href="tel:+917483106546" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-secondary)'">+91 7483106546</a></li>
-                                <li style="display: flex; align-items: flex-start;"><strong style="color: var(--text-primary); display: inline-block; width: 100px; flex-shrink: 0;">Email:</strong> <a href="mailto:chandrashekarnaikkethan@gmail.com" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s; word-break: break-all;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-secondary)'">chandrashekarnaikkethan@gmail.com</a></li>
-                                <li style="display: flex; align-items: flex-start;"><strong style="color: var(--text-primary); display: inline-block; width: 100px; flex-shrink: 0;">Address:</strong> <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s; display: flex; align-items: center; gap: 0.5rem;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-secondary)'"><i class="fa-solid fa-map-location-dot"></i> View on Map</a></li>
-                            </ul>
-                        </div>
-                        <div style="grid-column: 1 / -1; margin-top: 0.5rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
-                            <h3 style="color: var(--accent-primary); margin-bottom: 1.5rem; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-graduation-cap"></i> Education Overview</h3>
-                            <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
-                                <div style="flex: 1; min-width: 250px; background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-                                    <h4 style="color: var(--text-primary); margin-bottom: 0.8rem; font-size: 1.2rem;">1. School</h4>
-                                    <p style="color: var(--text-secondary);"><i class="fa-solid fa-school" style="margin-right: 0.8rem; color: var(--accent-secondary); font-size: 1.1rem;"></i>Don Bosco State School</p>
+                <!-- Smartphone Device Mockup Container -->
+                <div class="mobile-mockup-wrapper">
+                    <div class="mobile-phone-frame" id="mobile-profile-phone">
+                        <!-- Phone Hardware Buttons -->
+                        <div class="phone-button power-btn"></div>
+                        <div class="phone-button volume-up"></div>
+                        <div class="phone-button volume-down"></div>
+
+                        <!-- Mobile Display Screen -->
+                        <div class="mobile-screen">
+                            <!-- Top Status Bar -->
+                            <div class="mobile-status-bar">
+                                <div class="status-time" id="mobile-clock">09:41</div>
+                                <div class="dynamic-island">
+                                    <div class="camera-lens"></div>
+                                    <div class="speaker-pill"></div>
                                 </div>
-                                <div style="flex: 1; min-width: 250px; background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-                                    <h4 style="color: var(--text-primary); margin-bottom: 0.8rem; font-size: 1.2rem;">2. College</h4>
-                                    <p style="color: var(--text-secondary);"><i class="fa-solid fa-building-columns" style="margin-right: 0.8rem; color: var(--accent-secondary); font-size: 1.1rem;"></i>Don Bosco Pu College</p>
-                                </div>
-                                <div style="flex: 1; min-width: 250px; background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-                                    <h4 style="color: var(--text-primary); margin-bottom: 0.8rem; font-size: 1.2rem;">3. Degree</h4>
-                                    <p style="color: var(--text-secondary);"><i class="fa-solid fa-user-graduate" style="margin-right: 0.8rem; color: var(--accent-secondary); font-size: 1.1rem;"></i>Don Bosco Degree College</p>
+                                <div class="status-icons">
+                                    <i class="fa-solid fa-signal"></i>
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <i class="fa-solid fa-battery-full"></i>
                                 </div>
                             </div>
+
+                            <!-- Mobile App Header / Profile Cover -->
+                            <div class="mobile-app-header">
+                                <div class="mobile-avatar-container">
+                                    <div class="mobile-avatar-ring">
+                                        <img src="assets/images/profile_hero.png" alt="Kethan C Profile" class="mobile-avatar-img">
+                                    </div>
+                                    <span class="mobile-online-badge" title="Status: Online & Available">
+                                        <span class="pulse-dot"></span> Online
+                                    </span>
+                                </div>
+                                <h3 class="mobile-user-name">Kethan C</h3>
+                                <p class="mobile-user-tag"><i class="fa-solid fa-code"></i> Software Developer</p>
+
+                                <!-- Mobile Quick Actions Bar -->
+                                <div class="mobile-quick-actions">
+                                    <a href="tel:+917483106546" class="mobile-action-btn" title="Call Kethan">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>Call</span>
+                                    </a>
+                                    <a href="mailto:chandrashekarnaikkethan@gmail.com" class="mobile-action-btn" title="Email Kethan">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>Email</span>
+                                    </a>
+                                    <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" class="mobile-action-btn" title="Map Location">
+                                        <i class="fa-solid fa-map-pin"></i>
+                                        <span>Maps</span>
+                                    </a>
+                                    <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="mobile-action-btn" title="View Resume">
+                                        <i class="fa-solid fa-file-pdf"></i>
+                                        <span>Resume</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Screen Body -->
+                            <div class="mobile-screen-body">
+
+                                <!-- Pane 1: Personal Details -->
+                                <div class="mobile-tab-pane active" id="pane-details">
+                                    <div class="mobile-card-group">
+                                        <div class="mobile-group-header">
+                                            <i class="fa-solid fa-id-card"></i> Personal Details
+                                        </div>
+                                        <div class="mobile-list-item">
+                                            <div class="item-label"><i class="fa-solid fa-user"></i> Full Name</div>
+                                            <div class="item-value">Kethan C</div>
+                                        </div>
+                                        <div class="mobile-list-item">
+                                            <div class="item-label"><i class="fa-solid fa-cake-candles"></i> Age</div>
+                                            <div class="item-value">21 Years</div>
+                                        </div>
+                                        <div class="mobile-list-item">
+                                            <div class="item-label"><i class="fa-solid fa-venus-mars"></i> Gender</div>
+                                            <div class="item-value">Male</div>
+                                        </div>
+                                        <div class="mobile-list-item">
+                                            <div class="item-label"><i class="fa-solid fa-location-dot"></i> Hometown</div>
+                                            <div class="item-value">Chitradurga, 577501</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mobile-card-group" style="margin-top: 0.8rem;">
+                                        <div class="mobile-group-header">
+                                            <i class="fa-solid fa-bullseye"></i> Profile Bio
+                                        </div>
+                                        <p class="mobile-bio-text">
+                                            Passionate developer focused on building secure web platforms, artificial intelligence classifiers, and scalable DBMS architectures.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Pane 2: Contact Info -->
+                                <div class="mobile-tab-pane" id="pane-contact">
+                                    <div class="mobile-card-group">
+                                        <div class="mobile-group-header">
+                                            <i class="fa-solid fa-address-book"></i> Contact Info
+                                        </div>
+                                        <a href="tel:+917483106546" class="mobile-list-item clickable">
+                                            <div class="item-label"><i class="fa-solid fa-phone" style="color: #22c55e;"></i> Contact</div>
+                                            <div class="item-value">+91 7483106546 <i class="fa-solid fa-chevron-right arrow-icon"></i></div>
+                                        </a>
+                                        <a href="mailto:chandrashekarnaikkethan@gmail.com" class="mobile-list-item clickable">
+                                            <div class="item-label"><i class="fa-solid fa-envelope" style="color: #3b82f6;"></i> Email</div>
+                                            <div class="item-value mail-text">chandrashekarnaikkethan@gmail.com <i class="fa-solid fa-chevron-right arrow-icon"></i></div>
+                                        </a>
+                                        <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" class="mobile-list-item clickable">
+                                            <div class="item-label"><i class="fa-solid fa-map-location-dot" style="color: #ef4444;"></i> Address</div>
+                                            <div class="item-value">Chitradurga, Karnataka <i class="fa-solid fa-chevron-right arrow-icon"></i></div>
+                                        </a>
+                                        <a href="https://github.com/Kethanchandrashekarnaik-lang" target="_blank" rel="noopener noreferrer" class="mobile-list-item clickable">
+                                            <div class="item-label"><i class="fa-brands fa-github" style="color: #a855f7;"></i> GitHub</div>
+                                            <div class="item-value">@Kethanchandrashekarnaik-lang <i class="fa-solid fa-chevron-right arrow-icon"></i></div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Pane 3: Education Overview -->
+                                <div class="mobile-tab-pane" id="pane-education">
+                                    <div class="mobile-card-group">
+                                        <div class="mobile-group-header">
+                                            <i class="fa-solid fa-graduation-cap"></i> Education Overview
+                                        </div>
+                                        
+                                        <div class="mobile-edu-card">
+                                            <div class="edu-badge"><i class="fa-solid fa-user-graduate"></i> Degree</div>
+                                            <h4 class="edu-title">Don Bosco Degree College</h4>
+                                            <p class="edu-sub">Bachelor of Computer Science / Applications</p>
+                                        </div>
+
+                                        <div class="mobile-edu-card">
+                                            <div class="edu-badge"><i class="fa-solid fa-building-columns"></i> PU College</div>
+                                            <h4 class="edu-title">Don Bosco PU College</h4>
+                                            <p class="edu-sub">Pre-University Science (PCMC)</p>
+                                        </div>
+
+                                        <div class="mobile-edu-card">
+                                            <div class="edu-badge"><i class="fa-solid fa-school"></i> High School</div>
+                                            <h4 class="edu-title">Don Bosco State School</h4>
+                                            <p class="edu-sub">Secondary Education (SSLC)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pane 4: Skill Widgets -->
+                                <div class="mobile-tab-pane" id="pane-skills">
+                                    <div class="mobile-card-group">
+                                        <div class="mobile-group-header">
+                                            <i class="fa-solid fa-cubes"></i> Skill Widgets
+                                        </div>
+                                        <div class="mobile-widgets-grid">
+                                            <div class="mobile-widget">
+                                                <i class="fa-brands fa-python widget-icon" style="color: #38bdf8;"></i>
+                                                <span class="widget-title">Python & AI</span>
+                                                <span class="widget-level">90% Mastered</span>
+                                            </div>
+                                            <div class="mobile-widget">
+                                                <i class="fa-brands fa-html5 widget-icon" style="color: #f97316;"></i>
+                                                <span class="widget-title">Web Stack</span>
+                                                <span class="widget-level">95% Mastered</span>
+                                            </div>
+                                            <div class="mobile-widget">
+                                                <i class="fa-solid fa-shield-halved widget-icon" style="color: #a855f7;"></i>
+                                                <span class="widget-title">Cyber Security</span>
+                                                <span class="widget-level">80% Advanced</span>
+                                            </div>
+                                            <div class="mobile-widget">
+                                                <i class="fa-solid fa-database widget-icon" style="color: #10b981;"></i>
+                                                <span class="widget-title">DBMS & SQL</span>
+                                                <span class="widget-level">85% Proficient</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Mobile Navigation Dock / Bottom Bar -->
+                            <div class="mobile-dock-nav">
+                                <button class="dock-item active" data-tab="pane-details">
+                                    <i class="fa-solid fa-user-gear"></i>
+                                    <span>Profile</span>
+                                </button>
+                                <button class="dock-item" data-tab="pane-contact">
+                                    <i class="fa-solid fa-address-book"></i>
+                                    <span>Contact</span>
+                                </button>
+                                <button class="dock-item" data-tab="pane-education">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <span>Education</span>
+                                </button>
+                                <button class="dock-item" data-tab="pane-skills">
+                                    <i class="fa-solid fa-sliders"></i>
+                                    <span>Widgets</span>
+                                </button>
+                            </div>
+
+                            <!-- iPhone Home Indicator -->
+                            <div class="mobile-home-indicator"></div>
                         </div>
                     </div>
                 </div>
@@ -622,96 +789,253 @@
 
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section scroll-reveal">
+        <section id="contact" class="contact-section scroll-reveal" style="padding: 6rem 0; scroll-margin-top: 90px;">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Get In Touch</span>
+                    <span class="section-subtitle">macOS Mail & Messages</span>
                     <h2 class="section-title">Let's Connect</h2>
                     <div class="section-underline"></div>
                 </div>
 
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3>Have a question or want to collaborate? Reach out!</h3>
-                        <p>
-                            I am open to discussing new opportunities, internship roles, software design ideas, or
-                            cybersecurity challenges.
-                        </p>
+                <!-- MacBook Laptop Device Mockup Container -->
+                <div class="macos-contact-wrapper">
+                    <!-- MacBook Lid Screen -->
+                    <div class="macbook-lid" id="macbook-contact-screen">
+                        <!-- Camera Notch -->
+                        <div class="macbook-camera-notch">
+                            <div class="macbook-camera-lens"></div>
+                            <div class="macbook-sensor-dot"></div>
+                        </div>
 
-                        <div class="contact-details-list">
-                            <div class="contact-item">
-                                <div class="contact-icon-wrapper">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div class="contact-text-wrapper">
-                                    <span>Email Me</span>
-                                    <a
-                                        href="mailto:chandrashekarnaikkethan@gmail.com">chandrashekarnaikkethan@gmail.com</a>
-                                </div>
+                        <!-- macOS Menu Bar -->
+                        <div class="macos-menu-bar">
+                            <div class="macos-menu-left">
+                                <i class="fa-brands fa-apple apple-logo"></i>
+                                <span class="macos-menu-item active-app">Mail</span>
+                                <span class="macos-menu-item">File</span>
+                                <span class="macos-menu-item">Edit</span>
+                                <span class="macos-menu-item">View</span>
+                                <span class="macos-menu-item">Window</span>
+                                <span class="macos-menu-item">Help</span>
                             </div>
-
-                            <div class="contact-item">
-                                <div class="contact-icon-wrapper">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div class="contact-text-wrapper">
-                                    <span>Call / WhatsApp</span>
-                                    <a href="tel:+917483106546">+91 7483106546</a>
-                                </div>
-                            </div>
-
-                            <div class="contact-item">
-                                <div class="contact-icon-wrapper">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div class="contact-text-wrapper">
-                                    <span>Location</span>
-                                    <p>Karnataka, India</p>
-                                </div>
+                            <div class="macos-menu-right">
+                                <i class="fa-solid fa-sliders"></i>
+                                <i class="fa-solid fa-wifi"></i>
+                                <i class="fa-solid fa-battery-full"></i>
+                                <span id="macos-clock">09:41 AM</span>
                             </div>
                         </div>
 
-                        <div class="social-links-wrapper">
-                            <span>Follow Me</span>
-                            <div class="social-links">
-                                <a href="https://github.com/Kethanchandrashekarnaik-lang" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Account" id="social-github"><i
-                                        class="fa-brands fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/kethanc1504/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile" id="social-linkedin"><i
-                                        class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://www.instagram.com/kethan_c_/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram Account" id="social-instagram"><i
-                                        class="fa-brands fa-instagram"></i></a>
+                        <!-- macOS Desktop Screen Area -->
+                        <div class="macos-desktop-screen">
+                            <!-- macOS App Window Frame -->
+                            <div class="macos-window">
+                                <!-- Window Header Bar -->
+                                <div class="macos-window-header">
+                                    <div class="traffic-lights">
+                                        <div class="traffic-dot dot-red"></div>
+                                        <div class="traffic-dot dot-yellow"></div>
+                                        <div class="traffic-dot dot-green"></div>
+                                    </div>
+                                    <div class="macos-window-title">
+                                        <i class="fa-solid fa-envelope-open-text" style="color: #3b82f6;"></i> Mail — Compose & Connect
+                                    </div>
+                                    <div class="macos-window-toolbar">
+                                        <button type="button" class="macos-toolbar-btn" title="New Message"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button type="button" class="macos-toolbar-btn" title="Refresh"><i class="fa-solid fa-rotate-right"></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- Window Split-Pane Body -->
+                                <div class="macos-window-body">
+                                    <!-- Sidebar Navigation -->
+                                    <div class="macos-sidebar">
+                                        <div class="macos-sidebar-group">Mailboxes</div>
+                                        <button type="button" class="macos-nav-item active" data-macos-pane="macos-compose-pane">
+                                            <i class="fa-solid fa-paper-plane" style="color: #3b82f6;"></i> Send Email
+                                        </button>
+                                        <button type="button" class="macos-nav-item" data-macos-pane="macos-card-pane">
+                                            <i class="fa-solid fa-address-card" style="color: #22c55e;"></i> Contact Card
+                                        </button>
+
+                                        <div class="macos-sidebar-group" style="margin-top: 0.8rem;">Favorites</div>
+                                        <button type="button" class="macos-nav-item" data-macos-pane="macos-maps-pane">
+                                            <i class="fa-solid fa-map-location-dot" style="color: #ef4444;"></i> Location Pin
+                                        </button>
+                                        <button type="button" class="macos-nav-item" data-macos-pane="macos-social-pane">
+                                            <i class="fa-solid fa-globe" style="color: #a855f7;"></i> Social Profiles
+                                        </button>
+                                    </div>
+
+                                    <!-- Main View Area -->
+                                    <div class="macos-main-view">
+
+                                        <!-- Pane 1: Compose Email / Form -->
+                                        <div class="macos-view-pane active" id="macos-compose-pane">
+                                            <div class="macos-mail-card">
+                                                <div class="macos-recipient-bar">
+                                                    <span>To:</span>
+                                                    <span class="macos-recipient-badge">Kethan C &lt;chandrashekarnaikkethan@gmail.com&gt;</span>
+                                                </div>
+
+                                                <form id="contact-form" class="contact-form" autocomplete="off">
+                                                    <div class="macos-field-group">
+                                                        <div class="macos-field">
+                                                            <label for="contact-name">From Name</label>
+                                                            <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                                                        </div>
+                                                        <div class="macos-field">
+                                                            <label for="contact-email">From Email</label>
+                                                            <input type="email" id="contact-email" name="email" placeholder="your.email@example.com" required>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="macos-field" style="margin-bottom: 1rem;">
+                                                        <label for="contact-subject">Subject</label>
+                                                        <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
+                                                    </div>
+
+                                                    <div class="macos-field" style="margin-bottom: 1.2rem;">
+                                                        <label for="contact-message">Message Body</label>
+                                                        <textarea id="contact-message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                                                    </div>
+
+                                                    <button type="submit" id="contact-submit" class="macos-send-btn">
+                                                        <span>Send Email</span>
+                                                        <i class="fa-solid fa-paper-plane"></i>
+                                                    </button>
+                                                    <div class="form-message-container" id="form-msg"></div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <!-- Pane 2: Contact Card -->
+                                        <div class="macos-view-pane" id="macos-card-pane">
+                                            <div class="macos-card-header">
+                                                <img src="assets/images/profile_hero.png" alt="Kethan C" class="macos-avatar">
+                                                <div>
+                                                    <h3 class="macos-card-name">Kethan C</h3>
+                                                    <p class="macos-card-title"><i class="fa-solid fa-code" style="color: #3b82f6;"></i> Software Developer • Open to Roles</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="macos-details-grid">
+                                                <div class="macos-detail-item">
+                                                    <div class="macos-detail-icon" style="background: #3b82f6;">
+                                                        <i class="fa-solid fa-envelope"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="macos-detail-label">Email Address</div>
+                                                        <a href="mailto:chandrashekarnaikkethan@gmail.com" class="macos-detail-value" style="color: var(--text-primary);">chandrashekarnaikkethan@gmail.com</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="macos-detail-item">
+                                                    <div class="macos-detail-icon" style="background: #22c55e;">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="macos-detail-label">Phone / WhatsApp</div>
+                                                        <a href="tel:+917483106546" class="macos-detail-value" style="color: var(--text-primary);">+91 7483106546</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="macos-detail-item">
+                                                    <div class="macos-detail-icon" style="background: #ef4444;">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="macos-detail-label">Hometown Location</div>
+                                                        <div class="macos-detail-value">Chitradurga, Karnataka</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="macos-detail-item">
+                                                    <div class="macos-detail-icon" style="background: #a855f7;">
+                                                        <i class="fa-solid fa-briefcase"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="macos-detail-label">Current Status</div>
+                                                        <div class="macos-detail-value">Open for Hiring</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Pane 3: Location Map -->
+                                        <div class="macos-view-pane" id="macos-maps-pane">
+                                            <div class="macos-mail-card" style="text-align: center; padding: 2rem 1.5rem;">
+                                                <i class="fa-solid fa-map-location-dot" style="font-size: 3rem; color: #ef4444; margin-bottom: 1rem;"></i>
+                                                <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Chitradurga, Karnataka, India</h3>
+                                                <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
+                                                    Available for remote roles worldwide & on-site positions in India.
+                                                </p>
+                                                <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" class="macos-send-btn" style="background: linear-gradient(135deg, #ef4444, #f97316);">
+                                                    <i class="fa-solid fa-location-arrow"></i> Open in Apple Maps
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Pane 4: Social Profiles -->
+                                        <div class="macos-view-pane" id="macos-social-pane">
+                                            <div class="macos-details-grid">
+                                                <a href="https://github.com/Kethanchandrashekarnaik-lang" target="_blank" rel="noopener noreferrer" class="macos-detail-item" style="text-decoration: none;">
+                                                    <div class="macos-detail-icon" style="background: #a855f7;">
+                                                        <i class="fa-brands fa-github"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="macos-detail-label">GitHub Account</div>
+                                                        <div class="macos-detail-value">@Kethanchandrashekarnaik-lang</div>
+                                                    </div>
+                                                </a>
+
+                                                <a href="https://www.linkedin.com/in/kethanc1504/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="macos-detail-item" style="text-decoration: none;">
+                                                    <div class="macos-detail-icon" style="background: #0077b5;">
+                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="macos-detail-label">LinkedIn Profile</div>
+                                                        <div class="macos-detail-value">Kethan C</div>
+                                                    </div>
+                                                </a>
+
+                                                <a href="https://www.instagram.com/kethan_c_/" target="_blank" rel="noopener noreferrer" class="macos-detail-item" style="text-decoration: none;">
+                                                    <div class="macos-detail-icon" style="background: #e1306c;">
+                                                        <i class="fa-brands fa-instagram"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="macos-detail-label">Instagram Handle</div>
+                                                        <div class="macos-detail-value">@kethan_c_</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Floating macOS Desktop Dock -->
+                            <div class="macos-dock">
+                                <div class="dock-icon-item active-app" style="background: linear-gradient(135deg, #2563eb, #3b82f6);" title="Mail App" data-dock-target="macos-compose-pane">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="dock-icon-item" style="background: linear-gradient(135deg, #10b981, #059669);" title="Contacts App" data-dock-target="macos-card-pane">
+                                    <i class="fa-solid fa-address-book"></i>
+                                </div>
+                                <div class="dock-icon-item" style="background: linear-gradient(135deg, #ef4444, #dc2626);" title="Maps App" data-dock-target="macos-maps-pane">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <div class="dock-icon-item" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);" title="Safari / Socials" data-dock-target="macos-social-pane">
+                                    <i class="fa-solid fa-compass"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="contact-form-wrapper">
-                        <!-- Premium Form with EmailJS Integration -->
-                        <form id="contact-form" class="contact-form" autocomplete="off">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <input type="text" id="contact-name" name="name" placeholder=" " required>
-                                    <label for="contact-name">Your Name</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" id="contact-email" name="email" placeholder=" " required>
-                                    <label for="contact-email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="contact-subject" name="subject" placeholder=" " required>
-                                <label for="contact-subject">Subject</label>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="contact-message" name="message" rows="5" placeholder=" "
-                                    required></textarea>
-                                <label for="contact-message">Message</label>
-                            </div>
-                            <button type="submit" id="contact-submit" class="btn btn-primary btn-submit">
-                                <span>Send Message</span>
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                            <div class="form-message-container" id="form-msg"></div>
-                        </form>
+                    <!-- MacBook Laptop Base / Hinge -->
+                    <div class="macbook-base">
+                        <div class="macbook-notch-indent"></div>
                     </div>
                 </div>
             </div>
