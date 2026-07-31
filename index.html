@@ -236,32 +236,25 @@
             </div>
         </section>
 
-        <!-- Profile Section -->
+        <!-- Profile Section — Tablet / iPad OS Interface Theme -->
         <section id="profile" class="profile-section scroll-reveal" style="padding: 6rem 0; scroll-margin-top: 90px;">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Interactive Mobile OS</span>
+                    <span class="section-subtitle"><i class="fa-solid fa-tablet-screen-button" style="color: #3b82f6;"></i> Tablet OS Interface</span>
                     <h2 class="section-title">Personal Profile</h2>
                     <div class="section-underline"></div>
                 </div>
 
-                <!-- Smartphone Device Mockup Container -->
-                <div class="mobile-mockup-wrapper">
-                    <div class="mobile-phone-frame" id="mobile-profile-phone">
-                        <!-- Phone Hardware Buttons -->
-                        <div class="phone-button power-btn"></div>
-                        <div class="phone-button volume-up"></div>
-                        <div class="phone-button volume-down"></div>
+                <!-- Tablet / iPad Device Mockup Container -->
+                <div class="mobile-mockup-wrapper tab-mockup-wrapper">
+                    <div class="mobile-phone-frame tab-device-frame" id="mobile-profile-phone">
 
-                        <!-- Mobile Display Screen -->
-                        <div class="mobile-screen">
+                        <!-- Tablet Screen -->
+                        <div class="mobile-screen tab-screen">
                             <!-- Top Status Bar -->
-                            <div class="mobile-status-bar">
+                            <div class="mobile-status-bar tab-status-bar">
                                 <div class="status-time" id="mobile-clock">09:41</div>
-                                <div class="dynamic-island">
-                                    <div class="camera-lens"></div>
-                                    <div class="speaker-pill"></div>
-                                </div>
+                                <div class="tab-camera-dot" title="Front Camera"></div>
                                 <div class="status-icons">
                                     <i class="fa-solid fa-signal"></i>
                                     <i class="fa-solid fa-wifi"></i>
@@ -269,184 +262,307 @@
                                 </div>
                             </div>
 
-                            <!-- Mobile App Header / Profile Cover -->
-                            <div class="mobile-app-header">
-                                <div class="mobile-avatar-container">
-                                    <div class="mobile-avatar-ring">
-                                        <img src="assets/images/profile_hero.png" alt="Kethan C Profile" class="mobile-avatar-img">
+                            <!-- Tablet Split-Screen Body -->
+                            <div class="tab-split-body">
+                                <!-- Left Tablet Sidebar Navigation -->
+                                <div class="tab-sidebar">
+                                    <div class="tab-profile-card">
+                                        <div class="tab-avatar-wrapper">
+                                            <img src="assets/images/profile_hero.png" alt="Kethan C Profile" class="tab-avatar-img">
+                                            <span class="tab-online-dot" title="Online"></span>
+                                        </div>
+                                        <h3 class="tab-user-name">Kethan C</h3>
+                                        <p class="tab-user-role"><i class="fa-solid fa-code" style="color: #3b82f6;"></i> Software Developer</p>
                                     </div>
-                                    <span class="mobile-online-badge" title="Status: Online & Available">
-                                        <span class="pulse-dot"></span> Online
-                                    </span>
-                                </div>
-                                <h3 class="mobile-user-name">Kethan C</h3>
-                                <p class="mobile-user-tag"><i class="fa-solid fa-code"></i> Software Developer</p>
 
-                                <!-- Mobile Quick Actions Bar -->
-                                <div class="mobile-quick-actions">
-                                    <a href="tel:+917483106546" class="mobile-action-btn" title="Call Kethan">
-                                        <i class="fa-solid fa-phone"></i>
-                                        <span>Call</span>
-                                    </a>
-                                    <a href="mailto:chandrashekarnaikkethan@gmail.com" class="mobile-action-btn" title="Email Kethan">
-                                        <i class="fa-solid fa-envelope"></i>
-                                        <span>Email</span>
-                                    </a>
-                                    <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" class="mobile-action-btn" title="Map Location">
-                                        <i class="fa-solid fa-map-pin"></i>
-                                        <span>Maps</span>
-                                    </a>
-                                    <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="mobile-action-btn" title="View Resume">
-                                        <i class="fa-solid fa-file-pdf"></i>
-                                        <span>Resume</span>
-                                    </a>
+                                    <!-- Quick Actions -->
+                                    <div class="tab-quick-actions">
+                                        <a href="tel:+917483106546" class="tab-action-btn" title="Call">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </a>
+                                        <a href="mailto:chandrashekarnaikkethan@gmail.com" class="tab-action-btn" title="Email">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </a>
+                                        <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" class="tab-action-btn" title="Location">
+                                            <i class="fa-solid fa-map-pin"></i>
+                                        </a>
+                                        <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="tab-action-btn" title="Resume">
+                                            <i class="fa-solid fa-file-pdf"></i>
+                                        </a>
+                                    </div>
+
+                                    <!-- Navigation Sidebar Items -->
+                                    <div class="tab-sidebar-menu">
+                                        <button class="tab-nav-btn active dock-item" data-tab="pane-details">
+                                            <i class="fa-solid fa-id-card" style="color: #3b82f6;"></i>
+                                            <span>Personal Details</span>
+                                        </button>
+                                        <button class="tab-nav-btn dock-item" data-tab="pane-contact">
+                                            <i class="fa-solid fa-address-book" style="color: #22c55e;"></i>
+                                            <span>Contact Info</span>
+                                        </button>
+                                        <button class="tab-nav-btn dock-item" data-tab="pane-education">
+                                            <i class="fa-solid fa-graduation-cap" style="color: #eab308;"></i>
+                                            <span>Education</span>
+                                        </button>
+                                        <button class="tab-nav-btn dock-item" data-tab="pane-skills">
+                                            <i class="fa-solid fa-sliders" style="color: #a855f7;"></i>
+                                            <span>Skill Widgets</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Right Tablet Main Screen Area -->
+                                <div class="tab-main-content">
+                                    <!-- Pane 1: Personal Details (Realistic Digital ID Pass Theme) -->
+                                    <div class="mobile-tab-pane active" id="pane-details">
+                                        <!-- Digital ID Passport Banner -->
+                                        <div class="tab-id-banner">
+                                            <div class="tab-id-header">
+                                                <i class="fa-solid fa-microchip tab-chip-icon"></i>
+                                                <span class="tab-id-title">Developer Identity Pass</span>
+                                                <span class="tab-id-badge"><span class="pulse-dot"></span> VERIFIED</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-details-grid">
+                                            <div class="tab-detail-card">
+                                                <div class="tab-detail-icon" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6;">
+                                                    <i class="fa-solid fa-user-check"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">Legal Name</div>
+                                                    <div class="tab-detail-val">Kethan C</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-detail-card">
+                                                <div class="tab-detail-icon" style="background: rgba(244, 63, 94, 0.15); color: #f43f5e;">
+                                                    <i class="fa-solid fa-cake-candles"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">Age & DOB</div>
+                                                    <div class="tab-detail-val">21 Yrs (15 Apr 2005)</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-detail-card">
+                                                <div class="tab-detail-icon" style="background: rgba(168, 85, 247, 0.15); color: #a855f7;">
+                                                    <i class="fa-solid fa-venus-mars"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">Gender</div>
+                                                    <div class="tab-detail-val">Male</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-detail-card">
+                                                <div class="tab-detail-icon" style="background: rgba(34, 197, 94, 0.15); color: #22c55e;">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">Hometown & PIN</div>
+                                                    <div class="tab-detail-val">Chitradurga — 577501</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-detail-card">
+                                                <div class="tab-detail-icon" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">Specialization</div>
+                                                    <div class="tab-detail-val">Web, AI & DBMS</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-detail-card">
+                                                <div class="tab-detail-icon" style="background: rgba(234, 179, 8, 0.15); color: #eab308;">
+                                                    <i class="fa-solid fa-language"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">Languages</div>
+                                                    <div class="tab-detail-val">English, Kannada</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Bio Executive Summary -->
+                                        <div class="tab-bio-card">
+                                            <div class="tab-bio-header">
+                                                <i class="fa-solid fa-bullseye" style="color: #3b82f6;"></i>
+                                                <span>Executive Profile Bio</span>
+                                            </div>
+                                            <p class="tab-bio-desc">
+                                                "Passionate software developer specializing in building secure, high-performance web systems, machine learning classifiers, and optimized database architectures."
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Pane 2: Contact Info (Realistic Communication Matrix) -->
+                                    <div class="mobile-tab-pane" id="pane-contact">
+                                        <div class="tab-id-banner" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(59, 130, 246, 0.15)); border-color: rgba(34, 197, 94, 0.3);">
+                                            <div class="tab-id-header">
+                                                <i class="fa-solid fa-tower-cell tab-chip-icon" style="color: #22c55e;"></i>
+                                                <span class="tab-id-title">Communication Directory</span>
+                                                <span class="tab-id-badge"><span class="pulse-dot"></span> DIRECT LINE</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-details-grid">
+                                            <a href="tel:+917483106546" class="tab-detail-card clickable-card">
+                                                <div class="tab-detail-icon" style="background: rgba(34, 197, 94, 0.15); color: #22c55e;">
+                                                    <i class="fa-solid fa-phone"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">Phone & WhatsApp</div>
+                                                    <div class="tab-detail-val">+91 7483106546</div>
+                                                </div>
+                                                <i class="fa-solid fa-arrow-up-right-from-square tab-card-arrow"></i>
+                                            </a>
+
+                                            <a href="mailto:chandrashekarnaikkethan@gmail.com" class="tab-detail-card clickable-card">
+                                                <div class="tab-detail-icon" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6;">
+                                                    <i class="fa-solid fa-envelope"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">Primary Email</div>
+                                                    <div class="tab-detail-val mail-val">chandrashekarnaikkethan@gmail.com</div>
+                                                </div>
+                                                <i class="fa-solid fa-arrow-up-right-from-square tab-card-arrow"></i>
+                                            </a>
+
+                                            <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" class="tab-detail-card clickable-card">
+                                                <div class="tab-detail-icon" style="background: rgba(239, 68, 68, 0.15); color: #ef4444;">
+                                                    <i class="fa-solid fa-map-location-dot"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">Location Address</div>
+                                                    <div class="tab-detail-val">Chitradurga, KA, India</div>
+                                                </div>
+                                                <i class="fa-solid fa-arrow-up-right-from-square tab-card-arrow"></i>
+                                            </a>
+
+                                            <a href="https://github.com/Kethanchandrashekarnaik-lang" target="_blank" rel="noopener noreferrer" class="tab-detail-card clickable-card">
+                                                <div class="tab-detail-icon" style="background: rgba(168, 85, 247, 0.15); color: #a855f7;">
+                                                    <i class="fa-brands fa-github"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="tab-detail-label">GitHub Account</div>
+                                                    <div class="tab-detail-val">@Kethanchandrashekarnaik-lang</div>
+                                                </div>
+                                                <i class="fa-solid fa-arrow-up-right-from-square tab-card-arrow"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Pane 3: Education Overview (Academic Record Cards) -->
+                                    <div class="mobile-tab-pane" id="pane-education">
+                                        <div class="tab-id-banner" style="background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(59, 130, 246, 0.15)); border-color: rgba(234, 179, 8, 0.3);">
+                                            <div class="tab-id-header">
+                                                <i class="fa-solid fa-graduation-cap tab-chip-icon" style="color: #eab308;"></i>
+                                                <span class="tab-id-title">Academic Qualifications</span>
+                                                <span class="tab-id-badge" style="color: #eab308; background: rgba(234, 179, 8, 0.15); border-color: rgba(234, 179, 8, 0.4);">RECORDS VERIFIED</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-edu-list">
+                                            <div class="tab-edu-card">
+                                                <div class="tab-edu-badge"><i class="fa-solid fa-user-graduate"></i> Degree College</div>
+                                                <h4 class="tab-edu-institution">Don Bosco Degree College</h4>
+                                                <p class="tab-edu-degree">Bachelor of Computer Science / Applications (BCA)</p>
+                                                <span class="tab-edu-tag">Core CS • Algorithms • DBMS • Web Systems</span>
+                                            </div>
+
+                                            <div class="tab-edu-card">
+                                                <div class="tab-edu-badge" style="background: rgba(168, 85, 247, 0.15); color: #a855f7; border-color: rgba(168, 85, 247, 0.3);"><i class="fa-solid fa-building-columns"></i> Pre-University</div>
+                                                <h4 class="tab-edu-institution">Don Bosco PU College</h4>
+                                                <p class="tab-edu-degree">Pre-University Science (PCMC Stream)</p>
+                                                <span class="tab-edu-tag">Physics • Chemistry • Mathematics • Computer Science</span>
+                                            </div>
+
+                                            <div class="tab-edu-card">
+                                                <div class="tab-edu-badge" style="background: rgba(34, 197, 94, 0.15); color: #22c55e; border-color: rgba(34, 197, 94, 0.3);"><i class="fa-solid fa-school"></i> High School</div>
+                                                <h4 class="tab-edu-institution">Don Bosco State School</h4>
+                                                <p class="tab-edu-degree">Secondary School Leaving Certificate (SSLC)</p>
+                                                <span class="tab-edu-tag">Science & Mathematics Foundation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Pane 4: Skill Widgets (Interactive System Tech Matrix) -->
+                                    <div class="mobile-tab-pane" id="pane-skills">
+                                        <div class="tab-id-banner" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(56, 189, 248, 0.15)); border-color: rgba(168, 85, 247, 0.3);">
+                                            <div class="tab-id-header">
+                                                <i class="fa-solid fa-sliders tab-chip-icon" style="color: #a855f7;"></i>
+                                                <span class="tab-id-title">Technical Skill Matrix</span>
+                                                <span class="tab-id-badge" style="color: #a855f7; background: rgba(168, 85, 247, 0.15); border-color: rgba(168, 85, 247, 0.4);">LIVE METRICS</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-skills-grid">
+                                            <div class="tab-skill-card">
+                                                <div class="tab-skill-header">
+                                                    <i class="fa-brands fa-python" style="color: #38bdf8; font-size: 1.4rem;"></i>
+                                                    <div>
+                                                        <h5 class="tab-skill-name">Python & AI</h5>
+                                                        <span class="tab-skill-sub">Machine Learning & NLP</span>
+                                                    </div>
+                                                    <span class="tab-skill-pct">90%</span>
+                                                </div>
+                                                <div class="tab-progress-bg">
+                                                    <div class="tab-progress-bar" style="width: 90%; background: linear-gradient(90deg, #38bdf8, #3b82f6);"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-skill-card">
+                                                <div class="tab-skill-header">
+                                                    <i class="fa-brands fa-html5" style="color: #f97316; font-size: 1.4rem;"></i>
+                                                    <div>
+                                                        <h5 class="tab-skill-name">Web Stack</h5>
+                                                        <span class="tab-skill-sub">HTML5, CSS3, JS & UI</span>
+                                                    </div>
+                                                    <span class="tab-skill-pct">95%</span>
+                                                </div>
+                                                <div class="tab-progress-bg">
+                                                    <div class="tab-progress-bar" style="width: 95%; background: linear-gradient(90deg, #f97316, #eab308);"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-skill-card">
+                                                <div class="tab-skill-header">
+                                                    <i class="fa-solid fa-shield-halved" style="color: #a855f7; font-size: 1.4rem;"></i>
+                                                    <div>
+                                                        <h5 class="tab-skill-name">Cyber Security</h5>
+                                                        <span class="tab-skill-sub">256-Bit Entropy & Security</span>
+                                                    </div>
+                                                    <span class="tab-skill-pct">80%</span>
+                                                </div>
+                                                <div class="tab-progress-bg">
+                                                    <div class="tab-progress-bar" style="width: 80%; background: linear-gradient(90deg, #a855f7, #ec4899);"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-skill-card">
+                                                <div class="tab-skill-header">
+                                                    <i class="fa-solid fa-database" style="color: #10b981; font-size: 1.4rem;"></i>
+                                                    <div>
+                                                        <h5 class="tab-skill-name">DBMS & SQL</h5>
+                                                        <span class="tab-skill-sub">MySQL & Relational Systems</span>
+                                                    </div>
+                                                    <span class="tab-skill-pct">85%</span>
+                                                </div>
+                                                <div class="tab-progress-bg">
+                                                    <div class="tab-progress-bar" style="width: 85%; background: linear-gradient(90deg, #10b981, #14b8a6);"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <!-- Mobile Screen Body -->
-                            <div class="mobile-screen-body">
-
-                                <!-- Pane 1: Personal Details -->
-                                <div class="mobile-tab-pane active" id="pane-details">
-                                    <div class="mobile-card-group">
-                                        <div class="mobile-group-header">
-                                            <i class="fa-solid fa-id-card"></i> Personal Details
-                                        </div>
-                                        <div class="mobile-list-item">
-                                            <div class="item-label"><i class="fa-solid fa-user"></i> Full Name</div>
-                                            <div class="item-value">Kethan C</div>
-                                        </div>
-                                        <div class="mobile-list-item">
-                                            <div class="item-label"><i class="fa-solid fa-cake-candles"></i> Age</div>
-                                            <div class="item-value">21 Years</div>
-                                        </div>
-                                        <div class="mobile-list-item">
-                                            <div class="item-label"><i class="fa-solid fa-venus-mars"></i> Gender</div>
-                                            <div class="item-value">Male</div>
-                                        </div>
-                                        <div class="mobile-list-item">
-                                            <div class="item-label"><i class="fa-solid fa-location-dot"></i> Hometown</div>
-                                            <div class="item-value">Chitradurga, 577501</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="mobile-card-group" style="margin-top: 0.8rem;">
-                                        <div class="mobile-group-header">
-                                            <i class="fa-solid fa-bullseye"></i> Profile Bio
-                                        </div>
-                                        <p class="mobile-bio-text">
-                                            Passionate developer focused on building secure web platforms, artificial intelligence classifiers, and scalable DBMS architectures.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- Pane 2: Contact Info -->
-                                <div class="mobile-tab-pane" id="pane-contact">
-                                    <div class="mobile-card-group">
-                                        <div class="mobile-group-header">
-                                            <i class="fa-solid fa-address-book"></i> Contact Info
-                                        </div>
-                                        <a href="tel:+917483106546" class="mobile-list-item clickable">
-                                            <div class="item-label"><i class="fa-solid fa-phone" style="color: #22c55e;"></i> Contact</div>
-                                            <div class="item-value">+91 7483106546 <i class="fa-solid fa-chevron-right arrow-icon"></i></div>
-                                        </a>
-                                        <a href="mailto:chandrashekarnaikkethan@gmail.com" class="mobile-list-item clickable">
-                                            <div class="item-label"><i class="fa-solid fa-envelope" style="color: #3b82f6;"></i> Email</div>
-                                            <div class="item-value mail-text">chandrashekarnaikkethan@gmail.com <i class="fa-solid fa-chevron-right arrow-icon"></i></div>
-                                        </a>
-                                        <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" class="mobile-list-item clickable">
-                                            <div class="item-label"><i class="fa-solid fa-map-location-dot" style="color: #ef4444;"></i> Address</div>
-                                            <div class="item-value">Chitradurga, Karnataka <i class="fa-solid fa-chevron-right arrow-icon"></i></div>
-                                        </a>
-                                        <a href="https://github.com/Kethanchandrashekarnaik-lang" target="_blank" rel="noopener noreferrer" class="mobile-list-item clickable">
-                                            <div class="item-label"><i class="fa-brands fa-github" style="color: #a855f7;"></i> GitHub</div>
-                                            <div class="item-value">@Kethanchandrashekarnaik-lang <i class="fa-solid fa-chevron-right arrow-icon"></i></div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- Pane 3: Education Overview -->
-                                <div class="mobile-tab-pane" id="pane-education">
-                                    <div class="mobile-card-group">
-                                        <div class="mobile-group-header">
-                                            <i class="fa-solid fa-graduation-cap"></i> Education Overview
-                                        </div>
-                                        
-                                        <div class="mobile-edu-card">
-                                            <div class="edu-badge"><i class="fa-solid fa-user-graduate"></i> Degree</div>
-                                            <h4 class="edu-title">Don Bosco Degree College</h4>
-                                            <p class="edu-sub">Bachelor of Computer Science / Applications</p>
-                                        </div>
-
-                                        <div class="mobile-edu-card">
-                                            <div class="edu-badge"><i class="fa-solid fa-building-columns"></i> PU College</div>
-                                            <h4 class="edu-title">Don Bosco PU College</h4>
-                                            <p class="edu-sub">Pre-University Science (PCMC)</p>
-                                        </div>
-
-                                        <div class="mobile-edu-card">
-                                            <div class="edu-badge"><i class="fa-solid fa-school"></i> High School</div>
-                                            <h4 class="edu-title">Don Bosco State School</h4>
-                                            <p class="edu-sub">Secondary Education (SSLC)</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Pane 4: Skill Widgets -->
-                                <div class="mobile-tab-pane" id="pane-skills">
-                                    <div class="mobile-card-group">
-                                        <div class="mobile-group-header">
-                                            <i class="fa-solid fa-cubes"></i> Skill Widgets
-                                        </div>
-                                        <div class="mobile-widgets-grid">
-                                            <div class="mobile-widget">
-                                                <i class="fa-brands fa-python widget-icon" style="color: #38bdf8;"></i>
-                                                <span class="widget-title">Python & AI</span>
-                                                <span class="widget-level">90% Mastered</span>
-                                            </div>
-                                            <div class="mobile-widget">
-                                                <i class="fa-brands fa-html5 widget-icon" style="color: #f97316;"></i>
-                                                <span class="widget-title">Web Stack</span>
-                                                <span class="widget-level">95% Mastered</span>
-                                            </div>
-                                            <div class="mobile-widget">
-                                                <i class="fa-solid fa-shield-halved widget-icon" style="color: #a855f7;"></i>
-                                                <span class="widget-title">Cyber Security</span>
-                                                <span class="widget-level">80% Advanced</span>
-                                            </div>
-                                            <div class="mobile-widget">
-                                                <i class="fa-solid fa-database widget-icon" style="color: #10b981;"></i>
-                                                <span class="widget-title">DBMS & SQL</span>
-                                                <span class="widget-level">85% Proficient</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <!-- Mobile Navigation Dock / Bottom Bar -->
-                            <div class="mobile-dock-nav">
-                                <button class="dock-item active" data-tab="pane-details">
-                                    <i class="fa-solid fa-user-gear"></i>
-                                    <span>Profile</span>
-                                </button>
-                                <button class="dock-item" data-tab="pane-contact">
-                                    <i class="fa-solid fa-address-book"></i>
-                                    <span>Contact</span>
-                                </button>
-                                <button class="dock-item" data-tab="pane-education">
-                                    <i class="fa-solid fa-graduation-cap"></i>
-                                    <span>Education</span>
-                                </button>
-                                <button class="dock-item" data-tab="pane-skills">
-                                    <i class="fa-solid fa-sliders"></i>
-                                    <span>Widgets</span>
-                                </button>
-                            </div>
-
-                            <!-- iPhone Home Indicator -->
-                            <div class="mobile-home-indicator"></div>
+                            <!-- Tablet Home Bar -->
+                            <div class="tab-home-bar"></div>
                         </div>
                     </div>
                 </div>
@@ -510,280 +626,334 @@
             </div>
         </section>
 
-        <!-- GitHub Contribution Graph -->
+        <!-- GitHub Contribution Graph — Developer Terminal Dashboard -->
         <section class="github-section scroll-reveal">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Coding Activity</span>
+                    <span class="section-subtitle"><i class="fa-brands fa-github" style="color: #a855f7;"></i> Coding Activity</span>
                     <h2 class="section-title">GitHub Contributions</h2>
                     <div class="section-underline"></div>
                 </div>
-                <div class="github-graph-container">
-                    <img src="https://ghchart.rshah.org/8B5CF6/Kethanchandrashekarnaik-lang" alt="Kethan's Github Chart" />
+
+                <!-- GitHub Terminal Window Card -->
+                <div class="gh-dashboard-card">
+                    <!-- Terminal Top Header Bar -->
+                    <div class="gh-terminal-bar">
+                        <div class="gh-window-controls">
+                            <span class="dot close-dot"></span>
+                            <span class="dot min-dot"></span>
+                            <span class="dot max-dot"></span>
+                        </div>
+                        <div class="gh-terminal-title">
+                            <i class="fa-brands fa-github"></i>
+                            <span>github.com/Kethanchandrashekarnaik-lang — Contribution Matrix</span>
+                        </div>
+                        <div class="gh-live-status">
+                            <span class="pulse-dot"></span> LIVE SYNC
+                        </div>
+                    </div>
+
+                    <!-- Developer Activity Stats Bar (4 Stat Badges) -->
+                    <div class="gh-stats-row">
+                        <div class="gh-stat-box">
+                            <div class="stat-icon" style="background: rgba(34, 197, 94, 0.15); color: #22c55e;">
+                                <i class="fa-solid fa-code-commit"></i>
+                            </div>
+                            <div>
+                                <span class="stat-num">450+</span>
+                                <span class="stat-lbl">Yearly Commits</span>
+                            </div>
+                        </div>
+
+                        <div class="gh-stat-box">
+                            <div class="stat-icon" style="background: rgba(249, 115, 22, 0.15); color: #f97316;">
+                                <i class="fa-solid fa-fire"></i>
+                            </div>
+                            <div>
+                                <span class="stat-num">14 Days</span>
+                                <span class="stat-lbl">Current Streak</span>
+                            </div>
+                        </div>
+
+                        <div class="gh-stat-box">
+                            <div class="stat-icon" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6;">
+                                <i class="fa-solid fa-code-fork"></i>
+                            </div>
+                            <div>
+                                <span class="stat-num">12 Repos</span>
+                                <span class="stat-lbl">Public Projects</span>
+                            </div>
+                        </div>
+
+                        <div class="gh-stat-box">
+                            <div class="stat-icon" style="background: rgba(234, 179, 8, 0.15); color: #eab308;">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div>
+                                <span class="stat-num">25+ Stars</span>
+                                <span class="stat-lbl">Community Rating</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Heatmap Image Card -->
+                    <div class="gh-heatmap-wrapper">
+                        <img src="https://ghchart.rshah.org/8B5CF6/Kethanchandrashekarnaik-lang" alt="Kethan's Github Contribution Heatmap Chart" class="gh-chart-img" />
+                    </div>
+
+                    <!-- Footer Action Bar -->
+                    <div class="gh-dashboard-footer">
+                        <div class="gh-legend">
+                            <span class="legend-text">Less</span>
+                            <span class="legend-box level-0"></span>
+                            <span class="legend-box level-1"></span>
+                            <span class="legend-box level-2"></span>
+                            <span class="legend-box level-3"></span>
+                            <span class="legend-box level-4"></span>
+                            <span class="legend-text">More</span>
+                        </div>
+
+                        <a href="https://github.com/Kethanchandrashekarnaik-lang" target="_blank" rel="noopener noreferrer" class="gh-profile-btn">
+                            <i class="fa-brands fa-github"></i>
+                            <span>View @Kethanchandrashekarnaik-lang</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section scroll-reveal">
+        <!-- Projects Section — Interactive Project Library -->
+        <section id="projects" class="projects-section ps5-theme-section scroll-reveal">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">My Works</span>
-                    <h2 class="section-title">Academic Projects</h2>
+                    <span class="section-subtitle"><i class="fa-solid fa-folder-open" style="color: #3b82f6;"></i> Projects Library</span>
+                    <h2 class="section-title">Featured Projects</h2>
                     <div class="section-underline"></div>
                 </div>
 
-                <div class="projects-grid"
-                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 1100px; margin: 0 auto;">
-                    <!-- Project Card 1 -->
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="assets/images/project_blood_donor.png" alt="Blood Donor Finder Dashboard Mockup"
-                                class="project-image" loading="lazy">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link-btn" aria-label="View Github Repository"
-                                        id="project1-github"><i class="fa-brands fa-github"></i></a>
-                                    <a href="Blood%20Donor%20Finder.pdf" class="project-link-btn" target="_blank"
-                                        rel="noopener noreferrer" aria-label="View Project PDF Details" id="project1-pdf"><i
-                                            class="fa-solid fa-file-pdf"></i></a>
-                                    <a href="https://mithun-mithu.github.io/Blood-Donor-Finder---2.0/"
-                                        class="project-link-btn" target="_blank" rel="noopener noreferrer"
-                                        aria-label="View Live Website" id="project1-live"><i
-                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
+                <!-- PS5 Console Dashboard Container -->
+                <div class="ps5-console-wrapper">
+                    <!-- PS5 Top Status Bar Header -->
+                    <div class="ps5-status-bar">
+                        <div class="ps5-profile-info">
+                            <div class="ps5-avatar-ring">
+                                <img src="assets/images/logo.jpg" alt="Kethan C Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                            </div>
+                            <div class="ps5-user-meta">
+                                <span class="ps5-username">KETHAN_C <span class="ps5-online-dot"></span></span>
+                                <span class="ps5-level-badge">SOFTWARE DEVELOPER</span>
                             </div>
                         </div>
-                        <div class="project-details">
-                            <span class="project-category">Web System & Database</span>
-                            <h3>Blood Donor Finder</h3>
-                            <p>
-                                A responsive web platform designed to streamline blood donation. Connects blood donors
-                                with recipients in real-time, matching medical requests instantly based on blood group
-                                requirements and location constraints.
-                            </p>
-                            <div class="project-tags">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                                <span>MySQL</span>
-                                <span>DBMS</span>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
 
-                    <!-- Project Card 2 -->
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="assets/images/project_fake_news.png" alt="Fake News Detection System Mockup"
-                                class="project-image" loading="lazy">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link-btn" aria-label="View Github Repository"
-                                        id="project2-github"><i class="fa-brands fa-github"></i></a>
-                                    <a href="Fake%20news%20%20detection.pdf" class="project-link-btn" target="_blank"
-                                        rel="noopener noreferrer" aria-label="View Project PDF Details" id="project2-pdf"><i
-                                            class="fa-solid fa-file-pdf"></i></a>
-                                    <a href="https://aifake.vercel.app/" class="project-link-btn" target="_blank"
-                                        rel="noopener noreferrer" aria-label="View Live Website" id="project2-live"><i
-                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <!-- PS5 Game Selection Carousel Bar -->
+                    <div class="ps5-game-bar">
+                        <div class="ps5-tiles-container" id="ps5-tiles-container">
+                            <button class="ps5-game-tile active" data-game-index="0" aria-label="Select Blood Donor Finder">
+                                <div class="ps5-tile-thumb">
+                                    <img src="assets/images/project_blood_donor.png" alt="Blood Donor Finder">
                                 </div>
-                            </div>
+                                <div class="ps5-tile-info">
+                                    <span class="ps5-tile-title">Blood Donor</span>
+                                    <span class="ps5-tile-genre">DBMS • WEB</span>
+                                </div>
+                                <div class="ps5-tile-glow"></div>
+                            </button>
+
+                            <button class="ps5-game-tile" data-game-index="1" aria-label="Select Fake News Detection">
+                                <div class="ps5-tile-thumb">
+                                    <img src="assets/images/project_fake_news.png" alt="Fake News Detection">
+                                </div>
+                                <div class="ps5-tile-info">
+                                    <span class="ps5-tile-title">Fake News AI</span>
+                                    <span class="ps5-tile-genre">NLP • PYTHON</span>
+                                </div>
+                                <div class="ps5-tile-glow"></div>
+                            </button>
+
+                            <button class="ps5-game-tile" data-game-index="2" aria-label="Select QRGen AI">
+                                <div class="ps5-tile-thumb">
+                                    <img src="assets/images/project_ai_saas.png" alt="QRGen AI">
+                                </div>
+                                <div class="ps5-tile-info">
+                                    <span class="ps5-tile-title">QRGen AI</span>
+                                    <span class="ps5-tile-genre">SaaS • UI</span>
+                                </div>
+                                <div class="ps5-tile-glow"></div>
+                            </button>
+
+                            <button class="ps5-game-tile" data-game-index="3" aria-label="Select SecurePass AI">
+                                <div class="ps5-tile-thumb">
+                                    <img src="assets/images/project_collaborative.png" alt="SecurePass AI">
+                                </div>
+                                <div class="ps5-tile-info">
+                                    <span class="ps5-tile-title">SecurePass AI</span>
+                                    <span class="ps5-tile-genre">SECURITY</span>
+                                </div>
+                                <div class="ps5-tile-glow"></div>
+                            </button>
+
+                            <button class="ps5-game-tile" data-game-index="4" aria-label="Select Cute Lamp Login">
+                                <div class="ps5-tile-thumb">
+                                    <img src="assets/images/project_ai_saas.png" alt="Cute Lamp Login">
+                                </div>
+                                <div class="ps5-tile-info">
+                                    <span class="ps5-tile-title">Cute Lamp</span>
+                                    <span class="ps5-tile-genre">ANIMATION</span>
+                                </div>
+                                <div class="ps5-tile-glow"></div>
+                            </button>
                         </div>
-                        <div class="project-details">
-                            <span class="project-category">Artificial Intelligence & NLP</span>
-                            <h3>Fake News Detection using AI</h3>
-                            <p>
-                                A machine learning application designed to identify and flag misleading news content.
-                                Uses advanced natural language processing (NLP) classifiers to verify article textual
-                                markers and calculate authenticity confidence.
+                    </div>
+
+                    <!-- PS5 Active Game Stage Screen -->
+                    <div class="ps5-stage-card" id="ps5-stage-card">
+                        <div class="ps5-stage-backdrop" id="ps5-stage-backdrop" style="background-image: url('assets/images/project_blood_donor.png');"></div>
+                        <div class="ps5-stage-overlay"></div>
+
+                        <div class="ps5-stage-content">
+                            <div class="ps5-game-header">
+                                <div class="ps5-genre-badge" id="ps5-stage-category">
+                                    <i class="fa-solid fa-database"></i> Web System & Database
+                                </div>
+                                <h3 class="ps5-game-title" id="ps5-stage-title">Blood Donor Finder</h3>
+                            </div>
+
+                            <p class="ps5-game-description" id="ps5-stage-desc">
+                                A responsive web platform designed to streamline blood donation. Connects blood donors with recipients in real-time, matching medical requests instantly based on blood group requirements and location constraints.
                             </p>
-                            <div style="margin-top: auto; margin-bottom: 15px;">
-                                <a href="Fake%20news%20%20detection.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; width: fit-content; border: 1px solid var(--border-color);">
-                                    <i class="fa-solid fa-file-pdf" style="color: #ef4444;"></i> View PDF Details
+
+                            <div class="ps5-tech-tags" id="ps5-stage-tags">
+                                <span class="ps5-tag">HTML5</span>
+                                <span class="ps5-tag">CSS3</span>
+                                <span class="ps5-tag">JavaScript</span>
+                                <span class="ps5-tag">MySQL</span>
+                                <span class="ps5-tag">DBMS</span>
+                            </div>
+
+                            <!-- PS5 Controller DualSense Button Prompts -->
+                            <div class="ps5-controller-actions">
+                                <a href="https://mithun-mithu.github.io/Blood-Donor-Finder---2.0/" target="_blank" rel="noopener noreferrer" class="ps5-btn ps5-btn-cross" id="ps5-action-play">
+                                    <span class="ps5-icon-btn cross-btn">✖</span>
+                                    <span>PLAY PROJECT</span>
+                                </a>
+
+                                <a href="Blood%20Donor%20Finder.pdf" target="_blank" rel="noopener noreferrer" class="ps5-btn ps5-btn-square" id="ps5-action-pdf">
+                                    <span class="ps5-icon-btn square-btn">🔲</span>
+                                    <span>VIEW PDF</span>
+                                </a>
+
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="ps5-btn ps5-btn-triangle" id="ps5-action-github">
+                                    <span class="ps5-icon-btn triangle-btn">🔺</span>
+                                    <span>SOURCE CODE</span>
                                 </a>
                             </div>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>NLP</span>
-                                <span>Machine Learning</span>
-                                <span>Scikit-Learn</span>
-                                <span>HTML5 / CSS3</span>
-                            </div>
                         </div>
-                    </article>
-
-                    <!-- Project Card 3 -->
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="assets/images/project_ai_saas.png" alt="QRGen AI Mockup"
-                                class="project-image" loading="lazy">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link-btn" aria-label="View Github Repository"
-                                        id="project3-github"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://qr-gen-ai-nine.vercel.app/" class="project-link-btn" target="_blank"
-                                        rel="noopener noreferrer" aria-label="View Live Website" id="project3-live"><i
-                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-details">
-                            <span class="project-category">Web System & AI</span>
-                            <h3>QRGen AI</h3>
-                            <p>
-                                A premium, production-ready SaaS-style web application for generating and scanning QR codes. Features a breathtaking, futuristic glassmorphism design.
-                            </p>
-                            <div class="project-tags">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Card 4 -->
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="assets/images/project_collaborative.png" alt="SecurePass AI Mockup"
-                                class="project-image" loading="lazy">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link-btn" aria-label="View Github Repository"
-                                        id="project4-github"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://secure-pass-ai-advanced-password-ge.vercel.app/" class="project-link-btn" target="_blank"
-                                        rel="noopener noreferrer" aria-label="View Live Website" id="project4-live"><i
-                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-details">
-                            <span class="project-category">Web System & Security</span>
-                            <h3>SecurePass AI</h3>
-                            <p>
-                                An advanced password generator tool designed to create strong, secure, and customizable passwords to enhance digital security.
-                            </p>
-                            <div class="project-tags">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                                <span>Security</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Card 5 -->
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="assets/images/project_ai_saas.png" alt="Cute Lamp Login Mockup"
-                                class="project-image" loading="lazy">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link-btn" aria-label="View Github Repository"
-                                        id="project5-github"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://cute-lamp-login-delta.vercel.app/" class="project-link-btn" target="_blank"
-                                        rel="noopener noreferrer" aria-label="View Live Website" id="project5-live"><i
-                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-details">
-                            <span class="project-category">Web Development</span>
-                            <h3>Cute Lamp Login</h3>
-                            <p>
-                                An interactive, beautifully designed login page featuring a cute lamp animation and modern aesthetics.
-                            </p>
-                            <div class="project-tags">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                                <span>UI/UX</span>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Certificates Section -->
+              <!-- Certificates Section — Lively Glassmorphism Showcase -->
         <section id="certificates" class="certificates-section scroll-reveal">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Credentials</span>
-                    <h2 class="section-title">Certifications</h2>
+                    <span class="section-subtitle"><i class="fa-solid fa-award" style="color: #eab308;"></i> Verified Honors</span>
+                    <h2 class="section-title">Certifications & Achievements</h2>
                     <div class="section-underline"></div>
                 </div>
 
-                <div class="certificates-grid">
+                <div class="certificates-grid lively-cert-grid">
                     <!-- Certificate Card 1 -->
-                    <article class="certificate-card"
-                        data-src="assets/images/CYBER SECURECITY Course_Completion_Certificate.jpg" data-type="image">
-                        <div class="certificate-icon">
-                            <i class="fa-solid fa-shield-halved"></i>
+                    <article class="certificate-card lively-cert-card" data-src="assets/images/CYBER SECURECITY Course_Completion_Certificate.jpg" data-type="image">
+                        <div class="cert-thumb-container">
+                            <img src="assets/images/CYBER SECURECITY Course_Completion_Certificate.jpg" alt="Basic Cyber Security & Hygiene Certificate" class="cert-thumb-img">
+                            <div class="cert-thumb-overlay">
+                                <span><i class="fa-solid fa-expand"></i> Click to Enlarge</span>
+                            </div>
+                            <span class="cert-verify-badge"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
                         </div>
-                        <div class="certificate-details">
+                        <div class="certificate-details cert-body">
                             <h3 class="certificate-title">Basic Cyber Security & Hygiene Course</h3>
-                            <p class="certificate-description">
-                                National Cybercrime Training Centre (June 2025)
-                            </p>
-                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                            <div class="cert-meta-row">
+                                <span class="cert-issuer-pill"><i class="fa-solid fa-shield-halved" style="color: #a855f7;"></i> National Cybercrime Training Centre</span>
+                                <span class="cert-date-pill"><i class="fa-solid fa-calendar-days"></i> June 2025</span>
+                            </div>
+                            <span class="view-credential-btn cert-action-btn">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                         </div>
                     </article>
 
                     <!-- Certificate Card 2 -->
-                    <article class="certificate-card" data-src="assets/images/Cyber security essential.jpg"
-                        data-type="image">
-                        <div class="certificate-icon">
-                            <i class="fa-solid fa-lock"></i>
+                    <article class="certificate-card lively-cert-card" data-src="assets/images/Cyber security essential.jpg" data-type="image">
+                        <div class="cert-thumb-container">
+                            <img src="assets/images/Cyber security essential.jpg" alt="Cyber Security Essentials Certificate" class="cert-thumb-img">
+                            <div class="cert-thumb-overlay">
+                                <span><i class="fa-solid fa-expand"></i> Click to Enlarge</span>
+                            </div>
+                            <span class="cert-verify-badge"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
                         </div>
-                        <div class="certificate-details">
+                        <div class="certificate-details cert-body">
                             <h3 class="certificate-title">Cyber Security Essentials</h3>
-                            <p class="certificate-description">
-                                ISEA, MeitY, Govt. of India (May 2024)
-                            </p>
-                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                            <div class="cert-meta-row">
+                                <span class="cert-issuer-pill"><i class="fa-solid fa-lock" style="color: #3b82f6;"></i> ISEA, MeitY Govt. of India</span>
+                                <span class="cert-date-pill"><i class="fa-solid fa-calendar-days"></i> May 2024</span>
+                            </div>
+                            <span class="view-credential-btn cert-action-btn">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                         </div>
                     </article>
 
                     <!-- Certificate Card 3 -->
-                    <article class="certificate-card" data-src="assets/images/Viksit Bharat(1).jpg" data-type="image">
-                        <div class="certificate-icon">
-                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <article class="certificate-card lively-cert-card" data-src="assets/images/Viksit Bharat(1).jpg" data-type="image">
+                        <div class="cert-thumb-container">
+                            <img src="assets/images/Viksit Bharat(1).jpg" alt="MY Bharat Budget Quest Certificate" class="cert-thumb-img">
+                            <div class="cert-thumb-overlay">
+                                <span><i class="fa-solid fa-expand"></i> Click to Enlarge</span>
+                            </div>
+                            <span class="cert-verify-badge"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
                         </div>
-                        <div class="certificate-details">
+                        <div class="certificate-details cert-body">
                             <h3 class="certificate-title">MY Bharat Budget Quest 2026</h3>
-                            <p class="certificate-description">
-                                Online Quiz Participation (February 2026)
-                            </p>
-                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                            <div class="cert-meta-row">
+                                <span class="cert-issuer-pill"><i class="fa-solid fa-landmark" style="color: #eab308;"></i> MY Bharat National Event</span>
+                                <span class="cert-date-pill"><i class="fa-solid fa-calendar-days"></i> Feb 2026</span>
+                            </div>
+                            <span class="view-credential-btn cert-action-btn">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                         </div>
                     </article>
 
                     <!-- Certificate Card 4 -->
-                    <article class="certificate-card" data-src="assets/images/Viksit Bharat(2).jpg" data-type="image">
-                        <div class="certificate-icon">
-                            <i class="fa-solid fa-certificate"></i>
+                    <article class="certificate-card lively-cert-card" data-src="assets/images/Viksit Bharat(2).jpg" data-type="image">
+                        <div class="cert-thumb-container">
+                            <img src="assets/images/Viksit Bharat(2).jpg" alt="Viksit Bharat Young Leaders Dialogue Certificate" class="cert-thumb-img">
+                            <div class="cert-thumb-overlay">
+                                <span><i class="fa-solid fa-expand"></i> Click to Enlarge</span>
+                            </div>
+                            <span class="cert-verify-badge"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
                         </div>
-                        <div class="certificate-details">
+                        <div class="certificate-details cert-body">
                             <h3 class="certificate-title">Viksit Bharat Young Leaders Dialogue</h3>
-                            <p class="certificate-description">
-                                Online Quiz Participation (September 2025)
-                            </p>
-                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                            <div class="cert-meta-row">
+                                <span class="cert-issuer-pill"><i class="fa-solid fa-certificate" style="color: #22c55e;"></i> National Leadership Forum</span>
+                                <span class="cert-date-pill"><i class="fa-solid fa-calendar-days"></i> Sep 2025</span>
+                            </div>
+                            <span class="view-credential-btn cert-action-btn">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                         </div>
                     </article>
 
                     <!-- Certificate Card 5 -->
-                    <article class="certificate-card" data-src="assets/images/Cloud Computing.jpg" data-type="image">
-                        <div class="certificate-icon">
-                            <i class="fa-solid fa-cloud"></i>
+                    <article class="certificate-card lively-cert-card" data-src="assets/images/Cloud Computing.jpg" data-type="image">
+                        <div class="cert-thumb-container">
+                            <img src="assets/images/Cloud Computing.jpg" alt="Cloud Computing Course Certificate" class="cert-thumb-img">
+                            <div class="cert-thumb-overlay">
+                                <span><i class="fa-solid fa-expand"></i> Click to Enlarge</span>
+                            </div>
+                            <span class="cert-verify-badge"><i class="fa-solid fa-circle-check"></i> VERIFIED</span>
                         </div>
-                        <div class="certificate-details">
+                        <div class="certificate-details cert-body">
                             <h3 class="certificate-title">Cloud Computing Course</h3>
-                            <p class="certificate-description">
-                                FutureSkills Prime & AWS (May 2024)
-                            </p>
-                            <span class="view-credential-btn">View Certificate <i class="fa-solid fa-expand"></i></span>
+                            <div class="cert-meta-row">
+                                <span class="cert-issuer-pill"><i class="fa-solid fa-cloud" style="color: #38bdf8;"></i> FutureSkills Prime & AWS</span>
+                                <span class="cert-date-pill"><i class="fa-solid fa-calendar-days"></i> May 2024</span>
+                            </div>
+                            <span class="view-credential-btn cert-action-btn">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                         </div>
                     </article>
                 </div>
@@ -791,255 +961,238 @@
         </section>
 
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section scroll-reveal" style="padding: 6rem 0; scroll-margin-top: 90px;">
+        <!-- Contact Section — Windows 11 OS Interface Theme -->
+        <section id="contact" class="contact-section win11-contact-section scroll-reveal" style="padding: 5rem 0; scroll-margin-top: 90px;">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">macOS Mail & Messages</span>
+                    <span class="section-subtitle"><i class="fa-brands fa-windows" style="color: #0078d4;"></i> Windows 11 Mail & Connect</span>
                     <h2 class="section-title">Let's Connect</h2>
                     <div class="section-underline"></div>
                 </div>
 
-                <!-- MacBook Laptop Device Mockup Container -->
-                <div class="macos-contact-wrapper">
-                    <!-- MacBook Lid Screen -->
-                    <div class="macbook-lid" id="macbook-contact-screen">
-                        <!-- Camera Notch -->
-                        <div class="macbook-camera-notch">
-                            <div class="macbook-camera-lens"></div>
-                            <div class="macbook-sensor-dot"></div>
-                        </div>
-
-                        <!-- macOS Menu Bar -->
-                        <div class="macos-menu-bar">
-                            <div class="macos-menu-left">
-                                <i class="fa-brands fa-apple apple-logo"></i>
-                                <span class="macos-menu-item active-app">Mail</span>
-                                <span class="macos-menu-item">File</span>
-                                <span class="macos-menu-item">Edit</span>
-                                <span class="macos-menu-item">View</span>
-                                <span class="macos-menu-item">Window</span>
-                                <span class="macos-menu-item">Help</span>
-                            </div>
-                            <div class="macos-menu-right">
-                                <i class="fa-solid fa-sliders"></i>
-                                <i class="fa-solid fa-wifi"></i>
-                                <i class="fa-solid fa-battery-full"></i>
-                                <span id="macos-clock">09:41 AM</span>
+                <!-- Windows 11 Desktop Screen Container -->
+                <div class="win11-contact-wrapper">
+                    <!-- Windows 11 App Window Frame -->
+                    <div class="win11-contact-window">
+                        <!-- Window Title Header Bar -->
+                        <div class="win11-contact-titlebar">
+                            <div class="win11-title-left">
+                                <i class="fa-solid fa-envelope-open-text win11-app-icon" style="color: #0078d4;"></i>
+                                <span class="win11-title-text">Outlook Mail & Contacts — Kethan C</span>
                             </div>
                         </div>
 
-                        <!-- macOS Desktop Screen Area -->
-                        <div class="macos-desktop-screen">
-                            <!-- macOS App Window Frame -->
-                            <div class="macos-window">
-                                <!-- Window Header Bar -->
-                                <div class="macos-window-header">
-                                    <div class="traffic-lights">
-                                        <div class="traffic-dot dot-red"></div>
-                                        <div class="traffic-dot dot-yellow"></div>
-                                        <div class="traffic-dot dot-green"></div>
-                                    </div>
-                                    <div class="macos-window-title">
-                                        <i class="fa-solid fa-envelope-open-text" style="color: #3b82f6;"></i> Mail — Compose & Connect
-                                    </div>
-                                    <div class="macos-window-toolbar">
-                                        <button type="button" class="macos-toolbar-btn" title="New Message"><i class="fa-solid fa-pen-to-square"></i></button>
-                                        <button type="button" class="macos-toolbar-btn" title="Refresh"><i class="fa-solid fa-rotate-right"></i></button>
-                                    </div>
-                                </div>
+                        <!-- Window Split-Pane Body -->
+                        <div class="win11-contact-body">
+                            <!-- Left Sidebar Navigation -->
+                            <div class="win11-sidebar">
+                                <div class="win11-sidebar-group">Mailboxes</div>
+                                <button type="button" class="win11-nav-item active" data-win11-pane="win11-compose-pane">
+                                    <i class="fa-solid fa-paper-plane" style="color: #0078d4;"></i> Compose Email
+                                </button>
+                                <button type="button" class="win11-nav-item" data-win11-pane="win11-card-pane">
+                                    <i class="fa-solid fa-address-card" style="color: #22c55e;"></i> Contact Details
+                                </button>
 
-                                <!-- Window Split-Pane Body -->
-                                <div class="macos-window-body">
-                                    <!-- Sidebar Navigation -->
-                                    <div class="macos-sidebar">
-                                        <div class="macos-sidebar-group">Mailboxes</div>
-                                        <button type="button" class="macos-nav-item active" data-macos-pane="macos-compose-pane">
-                                            <i class="fa-solid fa-paper-plane" style="color: #3b82f6;"></i> Send Email
-                                        </button>
-                                        <button type="button" class="macos-nav-item" data-macos-pane="macos-card-pane">
-                                            <i class="fa-solid fa-address-card" style="color: #22c55e;"></i> Contact Card
-                                        </button>
-
-                                        <div class="macos-sidebar-group" style="margin-top: 0.8rem;">Favorites</div>
-                                        <button type="button" class="macos-nav-item" data-macos-pane="macos-maps-pane">
-                                            <i class="fa-solid fa-map-location-dot" style="color: #ef4444;"></i> Location Pin
-                                        </button>
-                                        <button type="button" class="macos-nav-item" data-macos-pane="macos-social-pane">
-                                            <i class="fa-solid fa-globe" style="color: #a855f7;"></i> Social Profiles
-                                        </button>
-                                    </div>
-
-                                    <!-- Main View Area -->
-                                    <div class="macos-main-view">
-
-                                        <!-- Pane 1: Compose Email / Form -->
-                                        <div class="macos-view-pane active" id="macos-compose-pane">
-                                            <div class="macos-mail-card">
-                                                <div class="macos-recipient-bar">
-                                                    <span>To:</span>
-                                                    <span class="macos-recipient-badge">Kethan C &lt;chandrashekarnaikkethan@gmail.com&gt;</span>
-                                                </div>
-
-                                                <form id="contact-form" class="contact-form" autocomplete="off">
-                                                    <div class="macos-field-group">
-                                                        <div class="macos-field">
-                                                            <label for="contact-name">From Name</label>
-                                                            <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
-                                                        </div>
-                                                        <div class="macos-field">
-                                                            <label for="contact-email">From Email</label>
-                                                            <input type="email" id="contact-email" name="email" placeholder="your.email@example.com" required>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="macos-field" style="margin-bottom: 1rem;">
-                                                        <label for="contact-subject">Subject</label>
-                                                        <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
-                                                    </div>
-
-                                                    <div class="macos-field" style="margin-bottom: 1.2rem;">
-                                                        <label for="contact-message">Message Body</label>
-                                                        <textarea id="contact-message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-                                                    </div>
-
-                                                    <button type="submit" id="contact-submit" class="macos-send-btn">
-                                                        <span>Send Email</span>
-                                                        <i class="fa-solid fa-paper-plane"></i>
-                                                    </button>
-                                                    <div class="form-message-container" id="form-msg"></div>
-                                                </form>
-                                            </div>
-                                        </div>
-
-                                        <!-- Pane 2: Contact Card -->
-                                        <div class="macos-view-pane" id="macos-card-pane">
-                                            <div class="macos-card-header">
-                                                <img src="assets/images/profile_hero.png" alt="Kethan C" class="macos-avatar">
-                                                <div>
-                                                    <h3 class="macos-card-name">Kethan C</h3>
-                                                    <p class="macos-card-title"><i class="fa-solid fa-code" style="color: #3b82f6;"></i> Software Developer • Open to Roles</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="macos-details-grid">
-                                                <div class="macos-detail-item">
-                                                    <div class="macos-detail-icon" style="background: #3b82f6;">
-                                                        <i class="fa-solid fa-envelope"></i>
-                                                    </div>
-                                                    <div>
-                                                        <div class="macos-detail-label">Email Address</div>
-                                                        <a href="mailto:chandrashekarnaikkethan@gmail.com" class="macos-detail-value" style="color: var(--text-primary);">chandrashekarnaikkethan@gmail.com</a>
-                                                    </div>
-                                                </div>
-
-                                                <div class="macos-detail-item">
-                                                    <div class="macos-detail-icon" style="background: #22c55e;">
-                                                        <i class="fa-solid fa-phone"></i>
-                                                    </div>
-                                                    <div>
-                                                        <div class="macos-detail-label">Phone / WhatsApp</div>
-                                                        <a href="tel:+917483106546" class="macos-detail-value" style="color: var(--text-primary);">+91 7483106546</a>
-                                                    </div>
-                                                </div>
-
-                                                <div class="macos-detail-item">
-                                                    <div class="macos-detail-icon" style="background: #ef4444;">
-                                                        <i class="fa-solid fa-location-dot"></i>
-                                                    </div>
-                                                    <div>
-                                                        <div class="macos-detail-label">Hometown Location</div>
-                                                        <div class="macos-detail-value">Chitradurga, Karnataka</div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="macos-detail-item">
-                                                    <div class="macos-detail-icon" style="background: #a855f7;">
-                                                        <i class="fa-solid fa-briefcase"></i>
-                                                    </div>
-                                                    <div>
-                                                        <div class="macos-detail-label">Current Status</div>
-                                                        <div class="macos-detail-value">Open for Hiring</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Pane 3: Location Map -->
-                                        <div class="macos-view-pane" id="macos-maps-pane">
-                                            <div class="macos-mail-card" style="text-align: center; padding: 2rem 1.5rem;">
-                                                <i class="fa-solid fa-map-location-dot" style="font-size: 3rem; color: #ef4444; margin-bottom: 1rem;"></i>
-                                                <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Chitradurga, Karnataka, India</h3>
-                                                <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
-                                                    Available for remote roles worldwide & on-site positions in India.
-                                                </p>
-                                                <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" class="macos-send-btn" style="background: linear-gradient(135deg, #ef4444, #f97316);">
-                                                    <i class="fa-solid fa-location-arrow"></i> Open in Apple Maps
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <!-- Pane 4: Social Profiles -->
-                                        <div class="macos-view-pane" id="macos-social-pane">
-                                            <div class="macos-details-grid">
-                                                <a href="https://github.com/Kethanchandrashekarnaik-lang" target="_blank" rel="noopener noreferrer" class="macos-detail-item" style="text-decoration: none;">
-                                                    <div class="macos-detail-icon" style="background: #a855f7;">
-                                                        <i class="fa-brands fa-github"></i>
-                                                    </div>
-                                                    <div>
-                                                        <div class="macos-detail-label">GitHub Account</div>
-                                                        <div class="macos-detail-value">@Kethanchandrashekarnaik-lang</div>
-                                                    </div>
-                                                </a>
-
-                                                <a href="https://www.linkedin.com/in/kethanc1504/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="macos-detail-item" style="text-decoration: none;">
-                                                    <div class="macos-detail-icon" style="background: #0077b5;">
-                                                        <i class="fa-brands fa-linkedin-in"></i>
-                                                    </div>
-                                                    <div>
-                                                        <div class="macos-detail-label">LinkedIn Profile</div>
-                                                        <div class="macos-detail-value">Kethan C</div>
-                                                    </div>
-                                                </a>
-
-                                                <a href="https://www.instagram.com/kethan_c_/" target="_blank" rel="noopener noreferrer" class="macos-detail-item" style="text-decoration: none;">
-                                                    <div class="macos-detail-icon" style="background: #e1306c;">
-                                                        <i class="fa-brands fa-instagram"></i>
-                                                    </div>
-                                                    <div>
-                                                        <div class="macos-detail-label">Instagram Handle</div>
-                                                        <div class="macos-detail-value">@kethan_c_</div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                <div class="win11-sidebar-group" style="margin-top: 1rem;">Favorites</div>
+                                <button type="button" class="win11-nav-item" data-win11-pane="win11-maps-pane">
+                                    <i class="fa-solid fa-map-location-dot" style="color: #ef4444;"></i> Location Pin
+                                </button>
+                                <button type="button" class="win11-nav-item" data-win11-pane="win11-social-pane">
+                                    <i class="fa-solid fa-globe" style="color: #a855f7;"></i> Social Profiles
+                                </button>
                             </div>
 
-                            <!-- Floating macOS Desktop Dock -->
-                            <div class="macos-dock">
-                                <div class="dock-icon-item active-app" style="background: linear-gradient(135deg, #2563eb, #3b82f6);" title="Mail App" data-dock-target="macos-compose-pane">
-                                    <i class="fa-solid fa-envelope"></i>
+                            <!-- Main View Area -->
+                            <div class="win11-main-view">
+                                <!-- Pane 1: Compose Email / Form -->
+                                <div class="win11-view-pane active" id="win11-compose-pane">
+                                    <div class="win11-mail-card">
+                                        <div class="win11-recipient-bar">
+                                            <span>To:</span>
+                                            <span class="win11-recipient-badge">Kethan C &lt;chandrashekarnaikkethan@gmail.com&gt;</span>
+                                        </div>
+
+                                        <form id="contact-form" class="contact-form" autocomplete="off">
+                                            <div class="win11-field-group">
+                                                <div class="win11-field">
+                                                    <label for="contact-name">From Name</label>
+                                                    <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                                                </div>
+                                                <div class="win11-field">
+                                                    <label for="contact-email">From Email</label>
+                                                    <input type="email" id="contact-email" name="email" placeholder="your.email@example.com" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="win11-field" style="margin-bottom: 1rem;">
+                                                <label for="contact-subject">Subject</label>
+                                                <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
+                                            </div>
+
+                                            <div class="win11-field" style="margin-bottom: 1.2rem;">
+                                                <label for="contact-message">Message Body</label>
+                                                <textarea id="contact-message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                                            </div>
+
+                                            <button type="submit" id="contact-submit" class="win11-send-btn">
+                                                <span>Send Email</span>
+                                                <i class="fa-solid fa-paper-plane"></i>
+                                            </button>
+                                            <div class="form-message-container" id="form-msg"></div>
+                                        </form>
+                                    </div>
                                 </div>
-                                <div class="dock-icon-item" style="background: linear-gradient(135deg, #10b981, #059669);" title="Contacts App" data-dock-target="macos-card-pane">
-                                    <i class="fa-solid fa-address-book"></i>
+
+                                <!-- Pane 2: Contact Card -->
+                                <div class="win11-view-pane" id="win11-card-pane">
+                                    <div class="win11-card-header">
+                                        <img src="assets/images/profile_hero.png" alt="Kethan C" class="win11-avatar-small">
+                                        <div>
+                                            <h3 class="win11-card-name">Kethan C</h3>
+                                            <p class="win11-card-title"><i class="fa-solid fa-code" style="color: #0078d4;"></i> Software Developer • Open to Roles</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="win11-details-grid">
+                                        <div class="win11-detail-item">
+                                            <div class="win11-detail-icon" style="background: #0078d4;">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </div>
+                                            <div>
+                                                <div class="win11-detail-label">Email Address</div>
+                                                <a href="mailto:chandrashekarnaikkethan@gmail.com" class="win11-detail-value" style="color: var(--text-primary);">chandrashekarnaikkethan@gmail.com</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="win11-detail-item">
+                                            <div class="win11-detail-icon" style="background: #22c55e;">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </div>
+                                            <div>
+                                                <div class="win11-detail-label">Phone / WhatsApp</div>
+                                                <a href="tel:+917483106546" class="win11-detail-value" style="color: var(--text-primary);">+91 7483106546</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="win11-detail-item">
+                                            <div class="win11-detail-icon" style="background: #ef4444;">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                            <div>
+                                                <div class="win11-detail-label">Hometown Location</div>
+                                                <div class="win11-detail-value">Chitradurga, Karnataka</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="win11-detail-item">
+                                            <div class="win11-detail-icon" style="background: #a855f7;">
+                                                <i class="fa-solid fa-briefcase"></i>
+                                            </div>
+                                            <div>
+                                                <div class="win11-detail-label">Current Status</div>
+                                                <div class="win11-detail-value">Open for Hiring</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="dock-icon-item" style="background: linear-gradient(135deg, #ef4444, #dc2626);" title="Maps App" data-dock-target="macos-maps-pane">
-                                    <i class="fa-solid fa-map-location-dot"></i>
+
+                                <!-- Pane 3: Location Map -->
+                                <div class="win11-view-pane" id="win11-maps-pane">
+                                    <div class="win11-mail-card" style="text-align: center; padding: 2rem 1.5rem;">
+                                        <i class="fa-solid fa-map-location-dot" style="font-size: 3rem; color: #ef4444; margin-bottom: 1rem;"></i>
+                                        <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Chitradurga, Karnataka, India</h3>
+                                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
+                                            Available for remote roles worldwide & on-site positions in India.
+                                        </p>
+                                        <a href="https://maps.app.goo.gl/KkwwJpmmtZLfUbJV7" target="_blank" rel="noopener noreferrer" class="win11-send-btn win11-maps-btn" style="background: linear-gradient(135deg, #ef4444, #f97316);">
+                                            <i class="fa-solid fa-location-arrow"></i> Open in Windows Maps
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="dock-icon-item" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);" title="Safari / Socials" data-dock-target="macos-social-pane">
-                                    <i class="fa-solid fa-compass"></i>
+
+                                <!-- Pane 4: Social Profiles (Microsoft Edge Web Hub Theme) -->
+                                <div class="win11-view-pane" id="win11-social-pane">
+                                    <!-- Edge Address Bar Mockup -->
+                                    <div class="edge-address-bar">
+                                        <i class="fa-solid fa-lock" style="color: #22c55e; font-size: 0.8rem;"></i>
+                                        <span class="edge-url">https://edge.microsoft.com/kethan/social_hub</span>
+                                        <i class="fa-solid fa-star" style="color: #eab308; margin-left: auto; font-size: 0.8rem; cursor: pointer;"></i>
+                                    </div>
+
+                                    <div class="win11-social-grid">
+                                        <!-- GitHub Card -->
+                                        <a href="https://github.com/Kethanchandrashekarnaik-lang" target="_blank" rel="noopener noreferrer" class="social-app-card github-card">
+                                            <div class="social-card-banner github-banner">
+                                                <i class="fa-brands fa-github social-banner-icon"></i>
+                                                <span class="social-badge">Code & Repositories</span>
+                                            </div>
+                                            <div class="social-card-content">
+                                                <div class="social-card-header">
+                                                    <div class="social-brand-icon github-icon"><i class="fa-brands fa-github"></i></div>
+                                                    <div>
+                                                        <h4 class="social-name">GitHub</h4>
+                                                        <span class="social-handle">@Kethanchandrashekarnaik-lang</span>
+                                                    </div>
+                                                </div>
+                                                <p class="social-desc">Explore open-source software, algorithm implementations, and projects.</p>
+                                                <div class="social-card-footer">
+                                                    <span>View Repositories</span>
+                                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <!-- LinkedIn Card -->
+                                        <a href="https://www.linkedin.com/in/kethanc1504/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="social-app-card linkedin-card">
+                                            <div class="social-card-banner linkedin-banner">
+                                                <i class="fa-brands fa-linkedin-in social-banner-icon"></i>
+                                                <span class="social-badge">Professional Network</span>
+                                            </div>
+                                            <div class="social-card-content">
+                                                <div class="social-card-header">
+                                                    <div class="social-brand-icon linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                                    <div>
+                                                        <h4 class="social-name">LinkedIn</h4>
+                                                        <span class="social-handle">Kethan C</span>
+                                                    </div>
+                                                </div>
+                                                <p class="social-desc">Connect for career opportunities, engineering updates, and networking.</p>
+                                                <div class="social-card-footer">
+                                                    <span>Connect on LinkedIn</span>
+                                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <!-- Instagram Card -->
+                                        <a href="https://www.instagram.com/kethan_c_/" target="_blank" rel="noopener noreferrer" class="social-app-card instagram-card">
+                                            <div class="social-card-banner instagram-banner">
+                                                <i class="fa-brands fa-instagram social-banner-icon"></i>
+                                                <span class="social-badge">Personal & Highlights</span>
+                                            </div>
+                                            <div class="social-card-content">
+                                                <div class="social-card-header">
+                                                    <div class="social-brand-icon instagram-icon"><i class="fa-brands fa-instagram"></i></div>
+                                                    <div>
+                                                        <h4 class="social-name">Instagram</h4>
+                                                        <span class="social-handle">@kethan_c_</span>
+                                                    </div>
+                                                </div>
+                                                <p class="social-desc">Behind-the-scenes updates, tech journey, and developer stories.</p>
+                                                <div class="social-card-footer">
+                                                    <span>Follow on Instagram</span>
+                                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
 
-                    <!-- MacBook Laptop Base / Hinge -->
-                    <div class="macbook-base">
-                        <div class="macbook-notch-indent"></div>
-                    </div>
                 </div>
             </div>
         </section>
