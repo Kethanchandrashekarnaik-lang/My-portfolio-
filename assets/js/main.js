@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize all components
     initTheme();
     initMobileMenu();
+    initDynamicIsland();
     initTypingAnimation();
     initScrollEffects();
     initInteractiveCard();
@@ -113,6 +114,57 @@ function initTypingAnimation() {
     }
 }
 
+/* --- Dynamic Island Navigation Backdrop Tracer --- */
+function initDynamicIsland() {
+    const activePill = document.getElementById('nav-active-pill');
+    const navList = document.querySelector('.nav-list');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    if (!activePill || !navList) return;
+
+    function movePillToElement(el) {
+        if (!el || window.innerWidth < 992) {
+            activePill.classList.remove('active');
+            return;
+        }
+        const navListRect = navList.getBoundingClientRect();
+        const elRect = el.getBoundingClientRect();
+
+        const left = elRect.left - navListRect.left;
+        const width = elRect.width;
+
+        activePill.style.left = `${left}px`;
+        activePill.style.width = `${width}px`;
+        activePill.classList.add('active');
+    }
+
+    function updateActivePill() {
+        const activeLink = document.querySelector('.nav-link.active');
+        movePillToElement(activeLink);
+    }
+
+    // Smooth hover gliding effect
+    navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            movePillToElement(link);
+        });
+        link.addEventListener('click', () => {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            movePillToElement(link);
+        });
+    });
+
+    navList.addEventListener('mouseleave', () => {
+        updateActivePill();
+    });
+
+    // Initial position trigger & window resize handler
+    setTimeout(updateActivePill, 100);
+    window.addEventListener('resize', updateActivePill);
+    window.updateDynamicIslandPill = updateActivePill;
+}
+
 /* --- Scroll Behaviors (Scroll reveal, scroll to top, nav highlight) --- */
 function initScrollEffects() {
     const header = document.getElementById('main-header');
@@ -125,20 +177,20 @@ function initScrollEffects() {
     window.addEventListener('scroll', () => {
         const scrollPos = window.scrollY;
 
-        // 1. Header Blur State
-        if (scrollPos > 50) {
-            header.style.padding = '5px 0';
-            header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+        // 1. Dynamic Island Compact Morphing State
+        if (scrollPos > 40) {
+            header.classList.add('scrolled');
         } else {
-            header.style.padding = '0';
-            header.style.boxShadow = 'none';
+            header.classList.remove('scrolled');
         }
 
         // 2. Scroll to Top Button Visibility
-        if (scrollPos > 400) {
-            scrollToTopBtn.classList.add('visible');
-        } else {
-            scrollToTopBtn.classList.remove('visible');
+        if (scrollToTopBtn) {
+            if (scrollPos > 400) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
         }
 
         // 3. Navigation Links Active Highlight on Scroll
@@ -152,22 +204,32 @@ function initScrollEffects() {
         });
 
         if (currentSectionId) {
+            let activeChanged = false;
             navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                const isTarget = link.getAttribute('href') === `#${currentSectionId}`;
+                if (isTarget && !link.classList.contains('active')) {
                     link.classList.add('active');
+                    activeChanged = true;
+                } else if (!isTarget) {
+                    link.classList.remove('active');
                 }
             });
+
+            if (activeChanged && typeof window.updateDynamicIslandPill === 'function') {
+                window.updateDynamicIslandPill();
+            }
         }
     });
 
     // Scroll to Top Click Event
-    scrollToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if (scrollToTopBtn) {
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    });
+    }
 
     // 4. Scroll Reveal Observer
     const revealCallback = (entries, observer) => {

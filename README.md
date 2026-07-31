@@ -1,89 +1,90 @@
-# Kethan C - Personal Portfolio
+# 🚀 Kethan C — Premium Developer Portfolio
 
-A personal portfolio website showcasing the skills, projects, and certifications of Kethan C, a passionate Software Developer with a focus on Cybersecurity and Artificial Intelligence.
+[![Portfolio Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](http://localhost:3000)
+[![Built With](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20JS-blue?style=for-the-badge)](index.html)
+[![UI Design](https://img.shields.io/badge/Design-Dynamic%20Island%20%2B%20Glassmorphism-violet?style=for-the-badge)](assets/css/style.css)
 
-## 🚀 About the Project
-
-This portfolio is designed to be a modern, responsive, and visually appealing representation of my professional journey. It features a dark/light mode toggle, smooth scroll animations, glassmorphism design elements, and interactive sections.
-
-## 🛠️ Tech Stack
-
-- **Frontend & Web:** HTML5, CSS3, JavaScript (ES6+), Glassmorphism UI
-- **AI & Machine Learning:** Python, Scikit-Learn, Natural Language Processing (NLP)
-- **Databases:** MySQL, SQLite3, Relational DBMS Design
-- **Cybersecurity:** Passwords & Cryptographic Principles, Cyber Security Hygiene
-- **Core Languages:** Python, Java, C, C++, JavaScript
-- **Icons & Fonts:** FontAwesome 6, Google Fonts (Inter, Outfit)
-
-## 🌟 Key Features
-
-- **Responsive Design:** Fully optimized for mobile, tablet, and desktop viewing, complete with a slide-out hamburger menu.
-- **Theme Toggle:** Switch between light and dark modes seamlessly.
-- **Custom Branding:** Features a personalized "KC" logo integrated seamlessly into the navigation header.
-- **Interactive Hero Section:** Features dynamic typography and a glassmorphism portrait card.
-- **Personal Profile Section:** Dedicated section containing personal details, contact info, and a quick education overview.
-- **Resume Access:** Direct link to view and download my professional resume.
-- **Projects Showcase:** Highlights academic projects with links to live demos and GitHub repositories:
-  - [Blood Donor Finder](https://mithun-mithu.github.io/Blood-Donor-Finder---2.0/)
-  - [Fake News Detection using AI](https://aifake.vercel.app/)
-  - [QRGen AI](https://qr-gen-ai-nine.vercel.app/)
-  - [SecurePass AI](https://secure-pass-ai-advanced-password-ge.vercel.app/)
-  - [Cute Lamp Login](https://cute-lamp-login-delta.vercel.app/)
-- **Certificates Viewer:** View and expand certifications directly within the portfolio, including:
-  - National Cyber Crime Training Center (2025)
-  - Cloud Computing Course (2025)
-  - Cyber Security Essentials (2025)
-  - MY Bharat Budget Quest (2026)
-  - Viksit Bharat Young Leaders Dialogue (2026)
-- **Contact Form:** A functional, styled contact form for direct communication.
-
-- **Live Server:** [https://kethanc.vercel.app/](https://kethanc.vercel.app/)
-
-## 📁 Project Structure
-
-The project follows a clean, organized, and modular structure to maintain separation of concerns:
-
-```text
-├── assets/                  # All static resources and assets
-│   ├── css/                 # Stylesheets directory
-│   │   └── style.css        # Contains all CSS including CSS variables, layout grids, responsive media queries, and animations
-│   ├── js/                  # JavaScript directory
-│   │   └── main.js          # Handles interactivity: theme toggling, scroll effects, typing animations, and mobile menu logic
-│   └── images/              # Image assets directory
-│       ├── logo.jpg         # Custom "KC" navigation branding logo
-│       ├── profile_hero.png # Personal portrait used in the hero section
-│       └── [Various]        # Project screenshots, certificate JPGs, and other UI assets
-├── index.html               # The main entry point. Contains the HTML5 semantic structure of the entire single-page portfolio
-├── README.md                # Project documentation detailing features, setup, and structure
-├── Resume.pdf               # Downloadable professional resume for recruiters
-├── Fake news  detection.pdf # Detailed project report/documentation for the Machine Learning Fake News Detection project
-└── Blood Donor Finder.pdf   # Detailed project report/documentation for the Blood Donor Finder application
-```
-
-## 👨‍💻 About Me
-
-I am a dedicated Software Developer with a strong foundation in computer science and a deep interest in cybersecurity.
-
-- **Education:** 
-  - Degree: Don Bosco Degree College
-  - College: Don Bosco PU College
-  - School: Don Bosco State School
-- **Programming Languages:** Python, Java, C, C++, JavaScript
-- **Web & Databases:** HTML5, CSS3, MySQL, SQLite3, DBMS
-- **Core CS:** Operating Systems, Computer Networks, Cyber Security Fundamentals
-- **Tools & Environments:** VS Code, Git, GitHub, Antigravity
-
-## 📧 Contact
-
-- **Email:** [chandrashekarnaikkethan@gmail.com](mailto:chandrashekarnaikkethan@gmail.com)
-- **Phone:** +91 7483106546
-- **Location:** Karnataka, India
-
-## 🌐 Connect with Me
-
-- **GitHub:** [Kethanchandrashekarnaik-lang](https://github.com/Kethanchandrashekarnaik-lang)
-- **LinkedIn:** [kethanc1504](https://www.linkedin.com/in/kethanc1504/?skipRedirect=true)
-- **Instagram:** [@kethan_c_](https://www.instagram.com/kethan_c_/)
+A modern, high-performance interactive developer portfolio showcasing software engineering projects, data structures, full-stack applications, and academic accomplishments. Features Apple-inspired UI elements, a **Dynamic Island** navbar, glassmorphism aesthetics, dynamic dark/light mode, and custom interactive themes.
 
 ---
-*Designed and built by Kethan C &copy; 2026*
+
+## ✨ Key Features & UI Highlights
+
+- 🏝️ **Apple-Inspired Dynamic Island Navbar**:
+  - Centered floating capsule navbar with smooth backdrop blur (`backdrop-filter: blur(24px)`).
+  - Morphing scroll physics that shrink the island on scroll.
+  - Active section tracer pill (`#nav-active-pill`) that glides fluidly under links on hover, click, or scroll.
+  - Fully responsive mobile dynamic island dropdown overlay.
+
+- 🖥️ **macOS Interactive Contact Theme**:
+  - Fully interactive macOS window interface for the contact section complete with traffic lights, sidebar app icons, live time display, and mail form.
+
+- 📱 **Interactive Smartphone Frame**:
+  - Interactive profile card styled as a mobile phone frame displaying key skills, metrics, and live status.
+
+- 🌗 **Dynamic Dark & Light Mode**:
+  - Seamless theme toggle storing user preference in `localStorage`.
+
+- ⚡ **Interactive 3D & Canvas Animations**:
+  - Integrated 3D Spline viewer components and interactive particle background canvas.
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Frontend**: HTML5, Vanilla CSS3 (Custom Design System, Design Tokens, Flexbox/Grid), JavaScript (ES6+ Vanilla)
+- **Icons & Fonts**: FontAwesome 6.4, Google Fonts (*Outfit*, *Inter*)
+- **3D & Canvas**: `@splinetool/viewer`, HTML5 Canvas Particle System
+- **Server**: Lightweight local HTTP server support (`python -m http.server`)
+
+---
+
+## 📂 Project Structure
+
+```bash
+MY PORTFOLIO/
+├── index.html                  # Main Portfolio HTML Markup
+├── README.md                   # Project Documentation
+├── Resume.pdf                  # Curriculum Vitae
+├── assets/
+│   ├── css/
+│   │   └── style.css          # Core Design System, Dynamic Island & Theme Styles
+│   ├── js/
+│   │   └── main.js           # Dynamic Island Tracer, Scroll Physics, Theme & Interactions
+│   └── images/
+│       ├── logo.jpg           # Brand Logo
+│       └── profile_hero.png   # Hero Profile Showcase
+└── certificates/               # Certifications & Project Documentation PDFs
+```
+
+---
+
+## 🚀 Local Setup & Development
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Kethanchandrashekarnaik-lang/My-portfolio-.git
+   cd My-portfolio-
+   ```
+
+2. **Run Locally**:
+   You can serve the static files with any HTTP server (e.g. Python, Node, VS Code Live Server):
+
+   *Using Python:*
+   ```bash
+   python -m http.server 3000
+   ```
+
+   *Using Node/npx:*
+   ```bash
+   npx http-server . -p 3000
+   ```
+
+3. **Open in Browser**:
+   Navigate to `http://localhost:3000` to view the live portfolio.
+
+---
+
+## 📜 License & Copyright
+
+© 2026 **Kethan C**. Designed & Developed with passion for software architecture and modern web aesthetics.
