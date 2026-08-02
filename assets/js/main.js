@@ -560,12 +560,15 @@ function initMobileProfileTheme() {
             const now = new Date();
             let hours = now.getHours();
             let minutes = now.getMinutes();
-            hours = hours < 10 ? '0' + hours : hours;
+            let seconds = now.getSeconds();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12 || 12;
             minutes = minutes < 10 ? '0' + minutes : minutes;
-            mobileClock.textContent = `${hours}:${minutes}`;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            mobileClock.textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
         }
         updateClock();
-        setInterval(updateClock, 10000);
+        setInterval(updateClock, 1000);
     }
 
     // 3. Dynamic 3D Interactive Tilt on Hover
@@ -651,15 +654,15 @@ function initMacOSContactTheme() {
             const now = new Date();
             let hours = now.getHours();
             let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
             const ampm = hours >= 12 ? 'PM' : 'AM';
-            hours = hours % 12;
-            hours = hours ? hours : 12;
-            hours = hours < 10 ? '0' + hours : hours;
+            hours = hours % 12 || 12;
             minutes = minutes < 10 ? '0' + minutes : minutes;
-            macosClock.textContent = `${hours}:${minutes} ${ampm}`;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            macosClock.textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
         }
         updateClock();
-        setInterval(updateClock, 10000);
+        setInterval(updateClock, 1000);
     }
 
     // 3. Dynamic 3D Laptop Lid Tilt on Hover

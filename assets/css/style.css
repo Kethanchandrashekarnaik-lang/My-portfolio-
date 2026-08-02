@@ -5054,3 +5054,187 @@ img {
     color: #ffffff !important;
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.35);
 }
+
+/* Modern Education Cards Showcase */
+.edu-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.8rem;
+    margin-top: 2.5rem;
+}
+
+.edu-modern-card {
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.edu-modern-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    transition: height 0.3s ease;
+}
+
+.edu-modern-card.gold-theme::before {
+    background: linear-gradient(90deg, #eab308, #f59e0b);
+}
+
+.edu-modern-card.purple-theme::before {
+    background: linear-gradient(90deg, #a855f7, #8b5cf6);
+}
+
+.edu-modern-card.green-theme::before {
+    background: linear-gradient(90deg, #22c55e, #10b981);
+}
+
+.edu-modern-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.edu-modern-card.gold-theme:hover {
+    box-shadow: 0 15px 35px -10px rgba(234, 179, 8, 0.25);
+}
+
+.edu-modern-card.purple-theme:hover {
+    box-shadow: 0 15px 35px -10px rgba(168, 85, 247, 0.25);
+}
+
+.edu-modern-card.green-theme:hover {
+    box-shadow: 0 15px 35px -10px rgba(34, 197, 94, 0.25);
+}
+
+.edu-card-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+
+.edu-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.gold-theme .edu-icon-box {
+    background: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.purple-theme .edu-icon-box {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.green-theme .edu-icon-box {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.edu-status-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35rem 0.8rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.edu-status-badge.graduated {
+    background: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.edu-status-badge.completed {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.edu-card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.edu-level-tag {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted, #94a3b8);
+    margin-bottom: 0.4rem;
+}
+
+.edu-degree-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-primary, #f8fafc);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.edu-institution {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #3b82f6;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 1rem;
+}
+
+.edu-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-secondary, #cbd5e1);
+    margin-bottom: 1.4rem;
+}
+
+.edu-tags {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.edu-tags span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary, #cbd5e1);
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.edu-modern-card:hover .edu-tags span {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.18);
+}

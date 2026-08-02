@@ -240,7 +240,6 @@
         <section id="profile" class="profile-section scroll-reveal" style="padding: 6rem 0; scroll-margin-top: 90px;">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle"><i class="fa-solid fa-tablet-screen-button" style="color: #3b82f6;"></i> Tablet OS Interface</span>
                     <h2 class="section-title">Personal Profile</h2>
                     <div class="section-underline"></div>
                 </div>
@@ -255,11 +254,6 @@
                             <div class="mobile-status-bar tab-status-bar">
                                 <div class="status-time" id="mobile-clock">09:41</div>
                                 <div class="tab-camera-dot" title="Front Camera"></div>
-                                <div class="status-icons">
-                                    <i class="fa-solid fa-signal"></i>
-                                    <i class="fa-solid fa-wifi"></i>
-                                    <i class="fa-solid fa-battery-full"></i>
-                                </div>
                             </div>
 
                             <!-- Tablet Split-Screen Body -->
@@ -301,10 +295,7 @@
                                             <i class="fa-solid fa-address-book" style="color: #22c55e;"></i>
                                             <span>Contact Info</span>
                                         </button>
-                                        <button class="tab-nav-btn dock-item" data-tab="pane-education">
-                                            <i class="fa-solid fa-graduation-cap" style="color: #eab308;"></i>
-                                            <span>Education</span>
-                                        </button>
+
                                         <button class="tab-nav-btn dock-item" data-tab="pane-skills">
                                             <i class="fa-solid fa-sliders" style="color: #a855f7;"></i>
                                             <span>Skill Widgets</span>
@@ -456,39 +447,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Pane 3: Education Overview (Academic Record Cards) -->
-                                    <div class="mobile-tab-pane" id="pane-education">
-                                        <div class="tab-id-banner" style="background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(59, 130, 246, 0.15)); border-color: rgba(234, 179, 8, 0.3);">
-                                            <div class="tab-id-header">
-                                                <i class="fa-solid fa-graduation-cap tab-chip-icon" style="color: #eab308;"></i>
-                                                <span class="tab-id-title">Academic Qualifications</span>
-                                                <span class="tab-id-badge" style="color: #eab308; background: rgba(234, 179, 8, 0.15); border-color: rgba(234, 179, 8, 0.4);">RECORDS VERIFIED</span>
-                                            </div>
-                                        </div>
 
-                                        <div class="tab-edu-list">
-                                            <div class="tab-edu-card">
-                                                <div class="tab-edu-badge"><i class="fa-solid fa-user-graduate"></i> Degree College</div>
-                                                <h4 class="tab-edu-institution">Don Bosco Degree College</h4>
-                                                <p class="tab-edu-degree">Bachelor of Computer Science / Applications (BCA)</p>
-                                                <span class="tab-edu-tag">Core CS • Algorithms • DBMS • Web Systems</span>
-                                            </div>
-
-                                            <div class="tab-edu-card">
-                                                <div class="tab-edu-badge" style="background: rgba(168, 85, 247, 0.15); color: #a855f7; border-color: rgba(168, 85, 247, 0.3);"><i class="fa-solid fa-building-columns"></i> Pre-University</div>
-                                                <h4 class="tab-edu-institution">Don Bosco PU College</h4>
-                                                <p class="tab-edu-degree">Pre-University Science (PCMC Stream)</p>
-                                                <span class="tab-edu-tag">Physics • Chemistry • Mathematics • Computer Science</span>
-                                            </div>
-
-                                            <div class="tab-edu-card">
-                                                <div class="tab-edu-badge" style="background: rgba(34, 197, 94, 0.15); color: #22c55e; border-color: rgba(34, 197, 94, 0.3);"><i class="fa-solid fa-school"></i> High School</div>
-                                                <h4 class="tab-edu-institution">Don Bosco State School</h4>
-                                                <p class="tab-edu-degree">Secondary School Leaving Certificate (SSLC)</p>
-                                                <span class="tab-edu-tag">Science & Mathematics Foundation</span>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <!-- Pane 4: Skill Widgets (Interactive System Tech Matrix) -->
                                     <div class="mobile-tab-pane" id="pane-skills">
@@ -570,56 +529,89 @@
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="experience-section scroll-reveal">
+        <section id="education" class="education-section scroll-reveal" style="padding: 6rem 0; scroll-margin-top: 90px;">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Academic Journey</span>
-                    <h2 class="section-title">Education</h2>
+                    <span class="section-subtitle"><i class="fa-solid fa-user-graduate" style="color: #eab308;"></i> Academic Journey</span>
+                    <h2 class="section-title">Education & Qualifications</h2>
                     <div class="section-underline"></div>
                 </div>
 
-                <div class="timeline">
-                    <!-- Education Item 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Graduated</div>
-                        <div class="timeline-content">
-                            <h3>Bachelor of Computer Science / Applications</h3>
-                            <span class="company">Don Bosco Degree College</span>
-                            <p>
-                                Completed undergraduate degree. Built extensive experience in programming principles,
-                                core database design, operating system internals, and networking configurations.
-                                Excelled in software architecture and algorithms.
+                <div class="edu-grid-container">
+                    <!-- Education Card 1: Degree -->
+                    <div class="edu-modern-card gold-theme">
+                        <div class="edu-card-topbar">
+                            <div class="edu-icon-box">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <span class="edu-status-badge graduated"><i class="fa-solid fa-circle-check"></i> Graduated</span>
+                        </div>
+                        <div class="edu-card-body">
+                            <span class="edu-level-tag">Degree College</span>
+                            <h3 class="edu-degree-title">Bachelor of Computer Science / Applications (BCA)</h3>
+                            <div class="edu-institution">
+                                <i class="fa-solid fa-building-columns"></i> Don Bosco Degree College
+                            </div>
+                            <p class="edu-desc">
+                                Completed undergraduate degree. Built extensive experience in programming principles, core database design, operating system internals, software architecture, and networking configurations.
                             </p>
+                            <div class="edu-tags">
+                                <span><i class="fa-solid fa-code"></i> Core CS</span>
+                                <span><i class="fa-solid fa-diagram-project"></i> Algorithms</span>
+                                <span><i class="fa-solid fa-database"></i> DBMS</span>
+                                <span><i class="fa-solid fa-globe"></i> Web Systems</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Education Item 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Completed</div>
-                        <div class="timeline-content">
-                            <h3>Pre-University Course (PUC)</h3>
-                            <span class="company">Don Bosco PU College</span>
-                            <p>
-                                Completed pre-university studies with a major focus on Physics, Chemistry, Mathematics,
-                                and Computer Science. Laid the technical foundation for software engineering and
-                                analytical problem-solving.
+                    <!-- Education Card 2: Pre-University -->
+                    <div class="edu-modern-card purple-theme">
+                        <div class="edu-card-topbar">
+                            <div class="edu-icon-box">
+                                <i class="fa-solid fa-landmark"></i>
+                            </div>
+                            <span class="edu-status-badge completed"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                        </div>
+                        <div class="edu-card-body">
+                            <span class="edu-level-tag">Pre-University</span>
+                            <h3 class="edu-degree-title">Pre-University Science (PCMC Stream)</h3>
+                            <div class="edu-institution">
+                                <i class="fa-solid fa-building-columns"></i> Don Bosco PU College
+                            </div>
+                            <p class="edu-desc">
+                                Major focus on Physics, Chemistry, Mathematics, and Computer Science. Laid strong technical foundations for software engineering and analytical problem-solving.
                             </p>
+                            <div class="edu-tags">
+                                <span><i class="fa-solid fa-atom"></i> Physics</span>
+                                <span><i class="fa-solid fa-flask"></i> Chemistry</span>
+                                <span><i class="fa-solid fa-calculator"></i> Mathematics</span>
+                                <span><i class="fa-solid fa-laptop-code"></i> Computer Science</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Education Item 3 -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Completed</div>
-                        <div class="timeline-content">
-                            <h3>Secondary School Education</h3>
-                            <span class="company">Don Bosco State School</span>
-                            <p>
-                                Completed high school education with strong academic honors. Actively participated in
-                                computing labs, science workshops, and logical reasoning programs.
+                    <!-- Education Card 3: High School -->
+                    <div class="edu-modern-card green-theme">
+                        <div class="edu-card-topbar">
+                            <div class="edu-icon-box">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <span class="edu-status-badge completed"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                        </div>
+                        <div class="edu-card-body">
+                            <span class="edu-level-tag">High School</span>
+                            <h3 class="edu-degree-title">Secondary School Leaving Certificate (SSLC)</h3>
+                            <div class="edu-institution">
+                                <i class="fa-solid fa-school-flag"></i> Don Bosco State School
+                            </div>
+                            <p class="edu-desc">
+                                Completed high school education with strong academic honors. Actively participated in computing labs, science workshops, and logical reasoning programs.
                             </p>
+                            <div class="edu-tags">
+                                <span><i class="fa-solid fa-microscope"></i> Science Foundation</span>
+                                <span><i class="fa-solid fa-square-root-variable"></i> Mathematics</span>
+                                <span><i class="fa-solid fa-brain"></i> Logic Labs</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -965,7 +957,6 @@
         <section id="contact" class="contact-section win11-contact-section scroll-reveal" style="padding: 5rem 0; scroll-margin-top: 90px;">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle"><i class="fa-brands fa-windows" style="color: #0078d4;"></i> Windows 11 Mail & Connect</span>
                     <h2 class="section-title">Let's Connect</h2>
                     <div class="section-underline"></div>
                 </div>
