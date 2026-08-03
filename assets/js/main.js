@@ -3,6 +3,9 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Boot Screen First
+    initBootScreen();
+    
     // Initialize all components
     initTheme();
     initMobileMenu();
@@ -881,11 +884,202 @@ function initWin11ContactTheme() {
             timeEl.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             dateEl.textContent = now.toLocaleDateString([], { month: 'numeric', day: 'numeric', year: 'numeric' });
         }
+/* --- PlayStation 5 (PS5) Project Dashboard Controller --- */
+function initPS5ProjectConsole() {
+    const tiles = document.querySelectorAll('.ps5-game-tile');
+    const stageCard = document.getElementById('ps5-stage-card');
+    const stageBackdrop = document.getElementById('ps5-stage-backdrop');
+    const stageCategory = document.getElementById('ps5-stage-category');
+    const stageTitle = document.getElementById('ps5-stage-title');
+    const stageRating = document.getElementById('ps5-stage-rating');
+    const stageDesc = document.getElementById('ps5-stage-desc');
+    const stageTags = document.getElementById('ps5-stage-tags');
+    const actionPlay = document.getElementById('ps5-action-play');
+    const actionPdf = document.getElementById('ps5-action-pdf');
+    const actionGithub = document.getElementById('ps5-action-github');
+
+    if (!tiles.length) return;
+
+    const gamesData = [
+        {
+            title: "Blood Donor Finder",
+            category: "Web System & Database",
+            categoryIcon: "fa-solid fa-database",
+            rating: "MATCHING: 99.4% INSTANT",
+            desc: "A responsive web platform designed to streamline blood donation. Connects blood donors with recipients in real-time, matching medical requests instantly based on blood group requirements and location constraints.",
+            image: "assets/images/project_blood_donor.png",
+            tags: ["HTML5", "CSS3", "JavaScript", "MySQL", "DBMS"],
+            playUrl: "https://mithun-mithu.github.io/Blood-Donor-Finder---2.0/",
+            pdfUrl: "Blood%20Donor%20Finder.pdf",
+            githubUrl: "#"
+        },
+        {
+            title: "Fake News Detection using AI",
+            category: "Artificial Intelligence & NLP",
+            categoryIcon: "fa-solid fa-brain",
+            rating: "ACCURACY: 98.7% NLP",
+            desc: "A machine learning application designed to identify and flag misleading news content. Uses advanced natural language processing (NLP) classifiers to verify article textual markers and calculate authenticity confidence.",
+            image: "assets/images/project_fake_news.png",
+            tags: ["Python", "NLP", "Machine Learning", "Scikit-Learn", "HTML5 / CSS3"],
+            playUrl: "https://aifake.vercel.app/",
+            pdfUrl: "Fake%20news%20%20detection.pdf",
+            githubUrl: "#"
+        },
+        {
+            title: "QRGen AI",
+            category: "Web System & SaaS AI",
+            categoryIcon: "fa-solid fa-qrcode",
+            rating: "GENERATION: 0.2s SPEED",
+            desc: "A premium, production-ready SaaS-style web application for generating and scanning QR codes. Features a breathtaking, futuristic glassmorphism design.",
+            image: "assets/images/project_ai_saas.png",
+            tags: ["HTML5", "CSS3", "JavaScript", "Glassmorphism", "AI SaaS"],
+            playUrl: "https://qr-gen-ai-nine.vercel.app/",
+            pdfUrl: null,
+            githubUrl: "#"
+        },
+        {
+            title: "SecurePass AI",
+            category: "Web System & Security",
+            categoryIcon: "fa-solid fa-shield-halved",
+            rating: "ENCRYPTION: 256-BIT",
+            desc: "An advanced password generator tool designed to create strong, secure, and customizable passwords to enhance digital security.",
+            image: "assets/images/project_collaborative.png",
+            tags: ["HTML5", "CSS3", "JavaScript", "Cybersecurity", "Entropy"],
+            playUrl: "https://secure-pass-ai-advanced-password-ge.vercel.app/",
+            pdfUrl: null,
+            githubUrl: "#"
+        },
+        {
+            title: "Cute Lamp Login",
+            category: "Interactive Web UI",
+            categoryIcon: "fa-solid fa-lightbulb",
+            rating: "ANIMATION: 60 FPS",
+            desc: "An interactive, beautifully designed login page featuring a cute lamp animation and modern aesthetics.",
+            image: "assets/images/project_ai_saas.png",
+            tags: ["HTML5", "CSS3", "JavaScript", "Interactive UI/UX"],
+            playUrl: "https://cute-lamp-login-delta.vercel.app/",
+            pdfUrl: null,
+            githubUrl: "#"
+        }
+    ];
+
+    function selectGame(index) {
+        const game = gamesData[index];
+        if (!game) return;
+
+        tiles.forEach((tile, i) => {
+            if (i === parseInt(index)) {
+                tile.classList.add('active');
+            } else {
+                tile.classList.remove('active');
+            }
+        });
+
+        // Trigger animation reset
+        if (stageCard) {
+            stageCard.style.animation = 'none';
+            void stageCard.offsetWidth; // trigger reflow
+            stageCard.style.animation = 'ps5FadeIn 0.4s ease';
+        }
+
+        // Animate stage backdrop & content
+        if (stageBackdrop) {
+            stageBackdrop.style.backgroundImage = `url('${game.image}')`;
+        }
+        if (stageCategory) {
+            stageCategory.innerHTML = `<i class="${game.categoryIcon}"></i> ${game.category}`;
+        }
+        if (stageTitle) stageTitle.textContent = game.title;
+        if (stageRating) stageRating.textContent = game.rating;
+        if (stageDesc) stageDesc.textContent = game.desc;
+
+        if (stageTags) {
+            stageTags.innerHTML = game.tags.map(t => `<span class="ps5-tag">${t}</span>`).join('');
+        }
+
+        if (actionPlay) {
+            actionPlay.href = game.playUrl || '#';
+        }
+
+        if (actionPdf) {
+            if (game.pdfUrl) {
+                actionPdf.href = game.pdfUrl;
+                actionPdf.style.display = 'inline-flex';
+            } else {
+                actionPdf.style.display = 'none';
+            }
+        }
+
+        if (actionGithub) {
+            actionGithub.href = game.githubUrl || '#';
+        }
+    }
+
+    tiles.forEach(tile => {
+        tile.addEventListener('click', () => {
+            const index = tile.getAttribute('data-game-index');
+            selectGame(index);
+        });
+    });
+}
+
+/* --- Windows 11 Contact Section Interactive Handler --- */
+function initWin11ContactTheme() {
+    const navItems = document.querySelectorAll('.win11-nav-item');
+    const viewPanes = document.querySelectorAll('.win11-view-pane');
+    const dockIcons = document.querySelectorAll('.win11-taskbar-icon[data-win11-dock]');
+
+    function switchPane(targetId) {
+        navItems.forEach(item => {
+            if (item.getAttribute('data-win11-pane') === targetId) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        dockIcons.forEach(icon => {
+            if (icon.getAttribute('data-win11-dock') === targetId) {
+                icon.classList.add('active');
+            } else {
+                icon.classList.remove('active');
+            }
+        });
+
+        viewPanes.forEach(pane => {
+            if (pane.id === targetId) {
+                pane.classList.add('active');
+            } else {
+                pane.classList.remove('active');
+            }
+        });
+    }
+
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const target = item.getAttribute('data-win11-pane');
+            if (target) switchPane(target);
+        });
+    });
+
+    dockIcons.forEach(icon => {
+        icon.addEventListener('click', () => {
+            const target = icon.getAttribute('data-win11-dock');
+            if (target) switchPane(target);
+        });
+    });
+
+    // Windows 11 Taskbar Clock
+    const timeEl = document.getElementById('win11-contact-clock-time');
+    const dateEl = document.getElementById('win11-contact-clock-date');
+    if (timeEl && dateEl) {
+        function updateClock() {
+            const now = new Date();
+            timeEl.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            dateEl.textContent = now.toLocaleDateString([], { month: 'numeric', day: 'numeric', year: 'numeric' });
+        }
         updateClock();
         setInterval(updateClock, 1000);
     }
 }
-
-
-
 
